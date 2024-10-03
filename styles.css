@@ -1,0 +1,546 @@
+/* styles.css */
+
+body {
+    background-color: #333;
+    margin: 0;
+    padding: 10;
+    font-family: Arial, sans-serif;
+    color: white;
+    display: flex;
+    flex-direction: column; /* Set the main axis as vertical */
+}
+
+.logo {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.image-left img {
+    margin-right: 1em;
+    float: left; /* fallback */
+}
+
+.image-right img {
+    order: 1;
+    margin-left: 1em;
+    float: right; /* fallback */
+}
+
+.btn {
+  text-decoration: none;
+  padding: 0.5rem;
+  border: 1px solid #333333;
+  background-color:rgb( 247, 181, 0) ;
+  color: black;
+  margin:25px;
+  margin-left: 30px;
+  
+}
+
+
+
+	h2 {text-indent:20px;
+	text-align:left;
+	font-size:36px;
+	   }
+
+     h3.h3-left{
+      text-align: left;
+      font-size: 18px;
+     }
+     h3.h3-right{
+      text-align: right;
+      font-size: 18px;
+     }
+
+
+	h2.h2-img-left{font-size: 24px;
+			text-align: center;
+			margin-bottom: 1em;
+			margin-right: 2em;
+			display: block;
+			right: 0;
+      color: rgb( 247, 181, 0)
+		}	
+
+  
+      h3.h3-sub-head{ font-size: 28px;
+        text-align: center;
+        margin-bottom: 1em;
+        margin-right: 2em;
+        display: block;
+        right: 0;
+        color: rgb( 247, 181, 0)
+      }	
+
+
+	p.p-img-left{font-size: 20px;
+			text-align: left;
+			margin-bottom: 1em;
+			margin-right: 1em;
+			right: 0;
+			display: block;
+      line-height: 1.5;
+      font-family:"Calibri", sans-serif;
+		}
+
+	h2.h2-img-right{font-size: 24px;
+			text-indent: 10px;
+			text-align: center;
+			margin-bottom: 1em;
+			margin-left: 1em;
+			display: block;
+      color: rgb( 247, 181, 0)
+		}	
+
+	p.p-img-right{font-size: 20px;
+			text-align: left;
+			margin-bottom: 1em;
+			margin-left: 1em;
+      left: 0;
+			display: block;
+      line-height: 1.5;
+      font-family:"Calibri", sans-serif;
+		}
+
+	img.img-left{
+		max-width: 50%;
+		max-height: 50%;
+		}
+
+img.img-right {
+    max-width:50%;
+    max-height: 5%;
+
+}
+.img-container img {
+  display: flex;
+  max-width: 75%;
+  max-height: 75%;
+  height: auto; /* Make the image responsive */
+}
+
+.img-container-index img {
+  display: flex;
+  max-width: 100%;
+  max-height: 100%;
+  height: auto; /* Make the image responsive */
+}
+
+.img-container {
+  flex: 1; /* Take up 1/2 of the container */
+  justify-items: center;
+  align-items: center;
+  margin: 1em;
+}
+.img-container-index {
+  flex: 2; /* Take up 1/2 of the container */
+  justify-items: center;
+  align-items: center;
+}
+.text-container-index {
+  flex: 1;
+  padding: 0 20px; /* Add some padding to the text container */
+  overflow-y: auto; /* Add vertical scrollbar if needed */
+  max-height: 100%; /* Set maximum height to allow scrolling if the content overflows */
+}
+
+.container {
+	display: flex;
+  align-items: stretch;
+}
+
+.text-container {
+  flex: 2;
+  padding: 0 20px; /* Add some padding to the text container */
+  overflow-y: auto; /* Add vertical scrollbar if needed */
+  max-height: 100%; /* Set maximum height to allow scrolling if the content overflows */
+}
+
+
+@h2-sect only screen and (min-width: 601px) {
+  p {
+    font-size: 22px;
+  }
+}
+
+/* If the screen size is 600px or less, set the font-size of <div> to 30px */
+@media only screen and (max-width: 600px) {
+  p {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (min-width: 601px) {
+  p.p-img-right {
+    margin-bottom: 1em;
+    margin-right: 1em;
+    right: 0;
+    display: block;
+    line-height: 1.5 ;
+    font-family:"Calibri", sans-serif;
+    font-size: 16px;
+  }
+}
+
+/* If the screen size is 600px or less, set the font-size of <div> to 30px */
+@media only screen and (max-width: 600px) {
+  p.p-img-right {
+    font-size: 16px;
+  }
+}
+@media only screen and (min-width: 601px) {
+  p.p-img-left {
+			text-align: left;
+			margin-bottom: 1em;
+			margin-right: 1em;
+			right: 0;
+			display: block;
+      line-height: 1.5 ;
+      font-family:"Calibri", sans-serif;
+  }
+}
+
+/* If the screen size is 600px or less, set the font-size of <div> to 30px */
+@media only screen and (max-width: 600px) {
+  p.p-img-left {
+    font-size: 16px;
+  }
+}
+
+
+@media only screen and (min-width: 601px) {
+  h1.h1-sect-bg {
+    font-size: 64px;
+    text-align: center;
+  }
+}
+
+/* If the screen size is 600px or less, set the font-size of <div> to 30px */
+@media only screen and (max-width: 600px) {
+  h1.h1-sect-bg {
+    font-size: 48px;
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 601px) {
+  h2.h2-sect-bg {
+    font-size: 32px;
+    text-align: center;
+    color:white;
+  }
+}
+
+/* If the screen size is 600px or less, set the font-size of <div> to 30px */
+@media only screen and (max-width: 600px) {
+  h2.h2-sect-bg {
+    font-size: 24px;
+    text-align: center;
+    color: white;
+  }
+}
+
+@media only screen and (min-width: 601px) {
+  h2 {
+    font-size: 32px;
+  }
+}
+
+/* If the screen size is 600px or less, set the font-size of <div> to 30px */
+@media only screen and (max-width: 600px) {
+  h2 {
+    font-size: 24px;
+  }
+}
+
+
+.image-container {
+display: flex;
+justify-content: center;
+align-items: center;
+max-width: 100%; /* or any fixed width you desire */
+max-height: 100%; /* set the desired height */
+flex-grow: 1;
+flex-shrink: 1;
+flex-basis: auto;
+background-image: url("");
+background-size: contain;
+background-repeat: no-repeat;
+background-position: center;
+}
+
+.parent-container {
+display: flex;
+justify-content: center; /* Center the image horizontally */
+align-items: center; /* Center the image vertically */
+height: 100vh; /* Set the height of the parent container to 100% of the viewport height */
+/* Additional styles for the parent container */
+/* For example: background-color: #f0f0f0; */
+}
+
+
+
+/* CSS for the section without background image */
+.section-no-bg {
+  height: 50vh; /* Adjust height as needed */
+  background-color: #333; /* Set background color to whatever you want */
+}
+
+.section-abstract {
+  background-color: #333; /* Set background color to whatever you want */
+}
+
+
+.section-with-bg {
+  background-image: url("/Users/andrewgardener/Desktop/Aisling_Website/MindtheGap.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh; /* Adjust height as needed */
+  color: white; /* Set text color to contrast with background */
+  background-color: #333;
+}
+.back-sect-right{
+position: relative;
+width: 100%; /* Adjust width as needed */
+height: 300px; /* Adjust height as needed */
+}
+
+.back-sect-right p {
+position: absolute;
+bottom: 0;
+right: 0;
+margin: 0; /* Remove default margin */
+padding: 10px; /* Adjust padding as needed */
+}
+
+
+.image {
+flex: 1;
+}
+
+.image img {
+width: 100%;
+height: auto;
+}
+
+.organizing-committee {
+flex: 1;
+padding-left: 20px;
+max-width: 300px; /* Set a fixed width for the committee section */
+overflow: auto; /* Enable scrolling if the content exceeds the fixed width */
+}
+
+.organizing-committee h2 {
+font-size: 24px;
+}
+
+.organizing-committee ul {
+list-style-type: none;
+padding: 0;
+}
+
+.organizing-committee li {
+margin-bottom: 10px;
+}
+.company-details{
+overflow: hidden;
+padding: 3em 0em;
+background: #7393B3;
+text-align: center;
+margin-top: 5em;
+}
+
+.header {text-align:left;
+  font-size:64px; 
+}
+
+h2 {font-size:32px;
+ }
+
+p{font-size:16px;
+text-align:left;
+line-height: 1.25 ;
+font-family:"Calibri", sans-serif;
+       }
+.h1-sect-bg{text-indent: 20px;
+    font-size:64px;
+    color: white;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.h1-sect-bg-1{text-indent: 20px;
+  font-size:64px;
+  color: white;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.h2-sect-bg-1{text-indent: 20px;
+  font-size: 32px;
+  color: rgb( 247, 181, 0);
+  display: block;
+  text-align: left;}
+
+.p-sect-bg{bottom: 0;
+right: 0;
+font-size: 22px;
+color: white;
+position: absolute;
+display: block;
+margin-bottom: 1em;
+margin-right: 1em;
+text-align:right;
+line-height: 1.5;
+}
+
+.navbar {
+  background-color: #333;
+  position: relative;
+  z-index: 999;
+  text-align: center;
+  vh:100px;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background: #333;
+}
+
+.navbar li {
+  display: inline-block;
+}
+
+.navbar li a {
+  color: white;
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  text-align: center;
+}
+
+/* Style the dropdown menu */
+.navbar ul ul {
+  position: absolute;
+  top: 100%;
+  display: none;
+}
+
+.navbar ul ul li {
+  display: block;
+}
+
+.navbar li:hover ul {
+  display: block;
+}
+
+/* Change the background color of dropdown links on hover */
+.navbar ul ul li a:hover {
+  background-color: #555;
+}
+
+/* Footer Bar  Section */
+
+.label-row {
+
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Additional styling for the labels */
+.label-row li {
+  text-align: center;
+  width: 120px;
+}
+
+.copyright
+{
+    overflow: hidden;
+    padding: 3em 0em;
+    border-top: 20px solid rgba(255, 255, 255, 0.08);
+    text-align: center;
+}
+     
+.copyright p
+{
+    letter-spacing: 0.8px;
+    font-size: 0.50em;
+    color: rgba(255, 255, 255, 0.6);
+}
+     
+.copyright a
+{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Styling Social Icons */
+ul.contact{
+  margin: 0;
+  padding: 2em 0em 0em 0em;
+  list-style: none;
+}
+   
+ul.contact li{
+  display: inline-block;
+  padding: 0em 5em;
+  font-size: 0.5em;
+}
+
+ul.contact li a{
+  color: #FFF;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+}
+
+#footer #col1,
+#footer #col2,
+#footer #col3{
+	float: left;
+	width: 320px;
+	padding: 0px 120px 0px 120px;
+}
+
+#footer #icon{
+	display: block;
+	font-size: 3em;
+}
+
+ 
+/*** Adding Styles to Copyright Div ***/
+.copyright
+{
+    overflow: hidden;
+    padding: 4em;
+    border-top: 10px solid rgba(255, 255, 255, 0.08);
+    border-bottom: 20px;
+    text-align: center;
+}
+     
+.copyright p
+{
+    letter-spacing: 0.8px;
+    font-size: 0.5em;
+    color: rgba(255, 255, 255, 0.6);
+    text-align: center;
+}
+     
+.copyright a
+{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8);
+}
+ 
+/* Styling Social Icons */
+.contact {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
