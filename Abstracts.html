@@ -1,0 +1,646 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,
+	initial-scale=1.0">
+	<title>Mind the Gap 2024 Abstracts</title>
+	<link rel="stylesheet" href="styles.css">
+	  <style>
+		section-with-bg {
+      background-image: url('https://github.com/MindTheGap2024/Conference2024/blob/main/Slide1.jpeg?raw=true');
+      background-size: cover;
+      background-position: center;
+      min-height: 200vh; /* Adjust height as needed */
+      color: white; /* Set text color to contrast with background */
+      background-color: #333;
+    }
+
+    /* CSS for the section without background image */
+    .section-no-bg {
+      height: 100vh; /* Adjust height as needed */
+      background-color: #333; /* Set background color to whatever you want */
+    }
+
+
+a{color: #b8860b; text-decoration:none;}
+a.current{color: #52739e;}
+a.current:hover{color: #8B8000 ;}
+a:hover{color: #8B8000 ;}
+a:active{color: #8B8000 ;}
+
+h2,h3{clear:left; color: #8B8000 ; margin:1.5em 0em 1em 0em;}
+h1{font-size:2.67em;}
+h2{font-size:2.00em;}
+h3{font-size:1.67em;}
+h4{font-size:1.33em;}
+p{list-style:none; margin:24px auto 24px auto; padding:0px; width:900px; text-align:left;}
+
+
+i,em{font-style:italic;}
+b,strong{font-weight:bold;}
+sup{
+    vertical-align: super;
+    font-size: 0.8em;
+    line-height: 0;
+}
+sub{
+    vertical-align: sub;
+    font-size: 0.8em;
+    line-height: 0;
+}
+table{
+    width: 1000px;
+    margin: 12px auto 24px auto;
+    float: center;
+    /* UNCOMMENT THIS FOR DEBUGGING THE ALIGNMENT */
+    /*border: 1px solid black;*/
+}
+th,td{
+    text-align: left;
+    /* UNCOMMENT THIS FOR DEBUGGING THE ALIGNMENT */
+    /*border: 1px solid black;*/
+}
+
+h2.h2-session-info{ text-align: center;
+    color: white;
+
+}
+		  .h2-sect-bg-1{text-indent: 20px;
+  font-size: 32px;
+  color: rgb( 247, 181, 0);
+  display: block;
+  text-align: center;}
+
+
+/* The Table on the Program Page */
+td.room{padding: 4px 12px 4px 4px; width: 90%; vertical-align:bottom; font-size:1.67em; color: #52739e; height:32px;}
+td.date{white-space:nowrap; width:130px; text-align:right; vertical-align:top; padding:4px 16px 0px 0px;}
+td.title{padding: 4px 12px 4px 4px; width: 90%; vertical-align:top; font-size:1.5em; color: white; height:32px;}
+td.title-special{padding: 4px 12px 4px 4px; width: 90%; vertical-align:top; font-size:1.67em; color: #52739e; height:32px; }
+td.speaker{padding: 4px 12px 4px 4px; font-style: bold; font-size:1em; max-height:999999px}
+td.abstract{padding: 4px 12px 12px 4px; font-size:1em; max-height:999999px}
+td.abstract img{display: block; margin: 4px auto 8px auto}
+
+
+
+/* My hacky way of making the site mobile-friendly */
+@media only screen and (max-width: 1100px) {
+    h2{font-size:3.00em;}
+    p{font-size:1.5em; line-height:1.5em;}
+    th,td,tr{font-size:1.5em; line-height:1.5em;}
+    td.date{font-size:1em; padding-top:0.5em;}
+    td.navigation{font-size:1.5em; padding:0px 20px 0px 20px;}
+    table.footer{font-size:0.33em;}
+}
+ h1.h1-centre{
+    align: center;
+ }
+
+
+.Speaker {
+    width: 30%; /* Set the width of the first cell to 30% */
+}
+
+.speaker-name {
+    width: 70%; /* Set the width of the second cell to 70% */
+}
+
+h2.h2-sect-bg-2{text-indent: 20px;
+    font-size: 32px;
+    color: rgb( 247, 181, 0);
+    display: block;
+    text-align: center;
+}
+
+</style>
+
+
+
+</style>
+
+</head>
+
+<nav class="navbar">
+    <ul>
+      <li><a href="https://mindthegap2024.github.io/MindTheGap2024">Home</a></li>
+      <li><a href="https://mindthegap2024.github.io/MindTheGap2024/About">About</a></li>
+  
+        <li>  
+
+              <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Abstracts">Abstracts</a>
+                <ul>
+                    <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Abstracts#Matthew-Bradley">Matthew Bradley</a></li>
+                    <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Abstracts#Rita-Fulco">Rita Fulco</a></li>
+                    <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Abstracts#Sandro-Gorgone">Sandro Gorgone</a></li>
+		    <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Abstracts#Giuliana-Gregorio">Giuliana Gregorio</a></li>
+		    <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Abstracts#Dominic-Harkin">Dominic Harkin</a></li>
+                    <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Abstracts#Caterina-Marino">Caterina Marino</a></li>
+                    <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Abstracts#Cahal-McLaughlin">Cahal McLaughlin and Siobhán Wills</a></li>
+                    <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Abstracts#Sinead-OSullivan">Sinead O’Sullivan</a></li>
+                    <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Abstracts#Aisling-Reid">Aisling Reid</a></li>
+                    <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Abstracts#Caterina-Resta">Caterina Resta</a></li>
+                    <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Abstracts#Valentina-Surace">Valentina Surace</a></li>
+                    <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Abstracts#Massimo-Villani">Massimo Villani</a></li>
+                    <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Abstracts#Craig-Wallace">Craig Wallace</a></li>
+                </ul>
+              </li>
+              <li>  
+                <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Speakers">Speakers</a>
+                  <ul>
+                      <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Speakers#Bradley-Speaker">Matthew Bradley</a></li>
+                      <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Speakers#Fulco-Speaker">Rita Fulco</a></li>
+                      <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Speakers#Gorgone-Speaker">Sandro Gorgone</a></li>
+		      <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Speakers#Giuliana-Gregorio">Giuliana Gregorio</a></li>
+                      <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Speakers#Harkin-Speaker">Dominic Harkin</a></li>
+		       <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Speakers#Cahal-Speaker">Cahal McLaughlin</a></li>
+                      <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Speakers#Marino-Speaker">Caterina Marino</a></li>
+                      <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Speakers#Sinead-Speaker">Sinead O’Sullivan</a></li>
+                      <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Speakers#Aisling-Speaker">Aisling Reid</a></li>
+                      <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Speakers#Caterina-Resta-Speaker">Caterina Resta</a></li>
+                      <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Speakers#Valentina-Speaker">Valentina Surace</a></li>
+                      <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Speakers#Massimo-Speaker">Massimo Villani</a></li>
+                      <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Speakers#Craig-Speaker">Craig Wallace</a></li>
+                      <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Speakers#Siobahn-Speaker">Siobhán Wills</a></li>
+                  </ul>
+                </li>
+
+	    
+        <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Conference_Prog">Conference Programme</a>
+		
+        <ul>
+          <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Conference_Prog#Morning-Session">Morning Session</a></li>
+          <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Conference_Prog#Afternoon-Session">Afternoon Session</a></li>
+          <li><a href="Final_Program.pdf" download>Download Programme</a></li>
+     <li><a href="Final_Poster.pdf" download>Download Poster</a></li>
+        </ul>
+		
+      </li>
+      <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Zoom_Link">Zoom Link</a></li>
+    </ul>
+  </nav>
+
+  
+<body>
+
+<section class="section-abstract">
+	
+	<h1 class="h1-sect-bg">Mind the Gap 2024</h1>
+	<h2 class="h2-sect-bg-2">Borders, Limits and Frontiers</h2>
+	<h2 class="h2-sect-bg-2">Abstracts</h2>
+
+</section>
+
+<section>
+
+<table id="Matthew-Bradley">
+	<tr>
+		<td class="speaker">
+			<b><h3 class="h3-sub-head">Matthew Bradley</h3></b>
+		</td>
+	</tr>
+	<tr>
+		<td class="title">
+			“Thou wenest Ich be a beggere”: Borders and the Habitus in Late Medieval English Romance
+		</td>
+	</tr>
+
+	<tr>
+		<td class="abstract">
+			This paper examines how borders in the landscapes of Middle English romance uncover the fragile
+			and situational nature of their heroes’ identities, and interrogates the ways in which they enforce
+			new rules and expectations for those who dare to cross them. Utilising Pierre Bordieu’s conception
+			of the habitus, the paper identifies tests of “objective homogenizing” in various romances, and how
+			crossings of borders necessitate or bring about changes in heroes’ disposition and status (Outline
+			of a Theory 80). First, attention is paid to figures such as Sir Tristrem, King Horn and Sir Orfeo who
+			must masquerade in “beggers cloþes” (Sir Orfeo 499) to obfuscate their identities and later prove
+			their courtly education. Despite how integral ‘courtliness’ is to their personae, Middle English
+			romances often stress the habitus’ socially-constructed nature, and how the crossing of borders
+			tests the efficacy of this construction. While readers are privy to a hero’s “system of dispositions”
+			throughout the narrative, the value of these dispositions within the text is demarcated by borders,
+			and heroes must quickly adapt to suit their new domains (Bordieu 82). This is exemplified in the
+			underappreciated Sir Gawain and the Carle of Carlisle, where the borders of the Carle’s domain
+			invert the hegemony of Arthur’s kingdom, the established classes now having to “accommodate
+			the churls” rather than exert dominion over them (Brandsten, “Sir Gawain” 306). Through
+			examining the heightened chivalric identities of Middle English romance, this paper highlights the
+			ways in which borders permit the imposition of new rules and mores upon a space, and the
+			influence of these conventions in shaping conceptions of personhood, status, and power
+		</td>
+	</tr>
+</table>
+
+<table id="Rita-Fulco">
+	<tr>
+        <td class="speaker">
+            <h3 class="h3-sub-head"><b>Rita Fulco</b></h3>
+        </td>
+    </tr>
+    <tr>
+        <td class="title">
+            Borders and Neo-Nationalism, A Geo-Philisophical Approach.
+        </td>
+    </tr>
+    <tr>
+        <td class="abstract">
+            The aim of my presentation is to offer an analysis of the question of borders and neo-nationalism from a
+            geo-philosophical perspective, an approach in which philosophy dialogues with other disciplines,
+            paying constant attention to man's habitation in the world. Firstly, I will try to deconstruct the concept of
+            'border', interpreted as an insurmountable barrier, as an immune dispositif, aimed at protecting property
+            and identity. Secondly, I will address the issue of neo-nationalism from Simone Weil's reflections on
+            patriotism in the 1930s and 1940s. In some of her writings from the 1940s, in fact, Weil offers a sharp
+            critique of patriotism and attempts to rethink the concept of homeland and citizenship in a universalist
+            sense. We know that globalisation has initiated an oscillation between de-localisation and re-
+            localisation. Considering only one of the two tendencies, however, would fail to grasp the complexity of
+            the issues at stake. On the other hand, any attempt to deny these opposing thrusts would be short-
+            sighted. My aim is to rethink the possibility of organising the large world spaces while avoiding the
+            strengthening of sovereignisms. I am, in fact, convinced that we should move towards a universalism in
+            which neither homologation nor immunisation from otherness prevails; a universalism that is, rather,
+            based on the recognition of and respect for differences; not excluding, but, on the contrary, increasingly
+            inclusive
+        </td>
+    </tr>
+</table>
+
+
+<table id="Sandro-Gorgone">
+
+
+	<tr>
+        <td class="speaker">
+            <h3 class="h3-sub-head"><b>Sandro Gorgone</b></h3>
+        </td>
+    </tr>
+		<tr>
+        <td class="title">
+			Liminal Places and not-Places        </td>
+    </tr>
+    <tr>
+        <td class="abstract">
+			The talk intends to analyse the relationship between place and border starting from the
+meaning of the border as limen (threshold, step through which one enters a domain) and as
+limes (line that circumscribes and de-limits a territory). If the first meaning indicates the
+possible openness to the relationship with the elsewhere and the outside, the second, on
+the other hand, refers to that which allows the subsistence (and essence) of a territory or an
+entity to be contained and de-limited, protecting it from the danger of the unlimited (the
+Greek apéiron). In this twofold sense, the border becomes the very essence of the place
+understood as the sphere of the human ethos, i.e. of a sojourn in which the experience of
+one&#39;s own border - and of one&#39;s own end - is always also the experience of contact and
+hospitality with the other from oneself. Starting from this connection, an attempt will
+therefore be made to contrast the liminal places and their landscapes, in which it is possible
+for humans to dwell on Earth as mortals, with the &quot;non-places&quot; typical of the homogenous
+and uniform space of globalisation, also with reference to Marc Augé&#39;s anthropological
+analyses.
+            
+        </td>
+    </tr>
+</table>
+
+
+<table id="Giuliana-Gregorio">
+	<tr>
+		<td class="speaker">
+			<h3 class="h3-sub-head"><b>Giuliana Gregorio</b></h3>
+		</td>
+	</tr>
+	<tr>
+		<td class="title">
+			Borders and Language: Hermeneutic-Philosophical Issues 
+		</td>
+	</tr>
+
+	<tr>
+		<td class="abstract">
+			The contribution aims to explore the concept of “border” in its relation to the question of language
+and linguisticity from a hermeneutic-philosophical perspective. Starting from the reflections
+expressed by Hans-Georg Gadamer in an emblematic essay of 1985, Grenzen der Sprache, and in
+other writings of his late production, the theme will be analysed through a threefold articulation,
+focusing respectively on: 1) the borders of language (relationship between language and
+understanding, communication between human beings and animals, the pre-linguistic, paralinguistic
+and supra-linguistic dimensions, children and language learning, language and poetry); 2) the
+borders in language (the split between said and unsaid, the quest for the “right word”, logos
+endiathetos/logos prophorikos, language and writing); 3) the borders between languages (the
+problem of translation).
+		</td>
+	</tr>
+</table>
+
+<table id="Dominic-Harkin">
+	<tr>
+		<td class="speaker">
+			<h3 class="h3-sub-head"><b>Dominic Harkin</b></h3>
+		</td>
+	</tr>
+	<tr>
+		<td class="title">
+			Funes the Arboreus: Border(less) Ecologies in Borges&#39; Ficciones
+		</td>
+	</tr>
+
+	<tr>
+		<td class="abstract">
+			Jorge Luis Borges’ titular mnemonist of “Funes the Memorious” once proposed “an analogous
+language” to that of John Locke, which would pair “each individual thing, each stone, each bird and
+each branch, [with] its own name.” The project Funes abandoned, we’re informed, because even
+this “seemed too general to him, too ambiguous.” Much work on Borges concerns the vastness of
+his labyrinthine fictions; however, the infinities of the second half of Ficciones are primarily fractal,
+burrowing down, not out. Funes’ frustration is with his failure to wholly disentangle objects or
+beings from their networks of association, or, as Eco-critic Stacy Alaimo writes, at the minute level,
+“substantial interchanges render [even] the human permeable, dissolving stable outlines.” This
+paper seeks to place Borges in dialogue with new, eco-critical theories of trans-corporeality;
+examining how his stories reconfigure the supposedly discrete object, and trouble the ostensible
+borderlines between the subject and their environment.
+		</td>
+	</tr>
+</table>
+
+
+	
+<table id="Cahal-McLaughlin">
+	<tr>
+		<td class="speaker">
+			<b><h3 class="h3-sub-head">Cahal McLaughlin and Siobhán Wills</h3></b>
+		</td>
+	</tr>
+	<tr>
+		<td class="title">
+		We Fight for this Land 
+		</td>
+	</tr>
+
+	<tr>
+		<td class="abstract">Using participatory practices in documentary filmmaking, what are the opportunities
+and challenges in representing the impact of ecoviolence on traditional communities
+in Brazil&#39;s Amazon. We Fight For This Land (2024, 62 mins) shows the experiences
+of the Quilombola community in Boa Hora 3/ Mamorana and the Ka’apor community,
+both in Maranahão state, as farmers and loggers breach the borders of their villages
+and land, with apparent impunity, and sometimes support, of the police and judicial
+system.
+		</td>
+	</tr>
+</table>
+
+
+<table id="Caterina-Marino">
+	<tr>
+		<td class="speaker">
+			<b><h3 class="h3-sub-head">Caterina Marino</h3></b>
+		</td>
+	</tr>
+	<tr>
+		<td class="title">
+			<i>Frontiers of Sexual Difference, The Phantasm of Gender</i>
+		</td>
+	</tr>
+
+	<tr>
+		<td class="abstract">When discussing Gender (first the ‘theory,’ today the ‘ideology’) we are always faced with a paradox: on the one hand, Gender is understood as a danger that requires the mobilisation of public opinion against the so-called “Gender dictatorship,” on the other hand, as the fad of a minority engaged in ephemeral and abstract issues. Scholars largely concur that a pivotal moment occurred during the “Peking World Conference on Women” (1995) when the Catholic Church criticized Gender category as undermining the inherent sexual differences between male and female genders, which the Church believes to be ‘natural. This stance positioned the Church in opposition to non-heteronormative relationships and presented Gender as a threat to the traditional family structure and the prevailing patriarchal social order.
+
+Judith Butler, renowned for challenging the assumed alignment between biological sex, gender identity and heterosexual orientation, consistently interrogates (as in her recent book Who’s Afraid of Gender?) the “Gender ideology”. This notion is a phantasm conjured by right-wing factions and conservative Catholic circles, intended to divert attention from pressing global issues like warfare, environmental crises, and the repercussions of neoliberal policies. Nevertheless, the “phantasmatic scene” from which Gender would originate (Butler evokes Jean Laplanche’s psychoanalytic theory) is not just a conscious political tactic, but an unconscious psychic construction (very close to psychosis) for individuals who are unsettled by the dismantling of the traditional schema of sexual difference—attributed to either a sacred, divine source or to an incontrovertible natural and biological foundation. Followers of Gender are accused to be intentioned in constructing fluid individuals in a fluid society where everyone claims to transform individualistic needs into universal rights. In contrast, proponents of a natural and moral order assert the importance of distinct boundaries between male and female, maintaining that these clear divisions are where the right and dignity of existence truly lie.
+
+Butler’s analysis emphasises the need to deconstruct the concept of Gender as a phantasm. The combined efforts of philosophy and psychoanalysis are crucial to recognising the dangerousness of boundaries, which marginalise individuals who challenge conformity, placing them outside the realm of what is considered human.
+		</td>
+	</tr>
+</table>
+
+
+
+<table id="Aisling-Reid">
+	<tr>
+		<td class="speaker">
+			<h3 class="h3-sub-head"><b>Aisling Reid</b></h3>
+		</td>
+	</tr>
+	<tr>
+		<td class="title">Border Brushstrokes: The Ulster Arts Club's Cultural Canvas
+		</td>
+	</tr>
+
+	<tr>
+		<td class="abstract">The cultural theorist Stuart Hall writes that cultural identity is not a fixed essence at all, lying unchanged outside history and culture, but is forged and remade continuously in relation to the ways we narrate our stories (Hall 235).  This process of transformation is emblematic of the Ulster Arts Club's response to the geopolitical shifts brought by the 1921 partition of Ireland. Established in 1904 with an inclusive vision of Irish culture, the club underwent a reorientation towards a distinct Ulster identity coinciding with the emergence of Northern Ireland as a separate political entity.
+
+The Ulster Arts Club's journey underscores the inherent dynamism in cultural identity underscored by Hall, navigating through the complexities of Irish and Ulster identities in the backdrop of political partition. Through this lens, the club's history can be read as a microcosm of the broader Northern Irish experience, grappling with issues of belonging, division, and the continuous reshaping of cultural narratives.
+
+Post-partition, the club's activities and exhibitions began to emphasize themes unique to Ulster, distancing itself from the Irish cultural influences dominant in the South. This shift was not just a response to the political division but also a strategic move to forge a unique cultural narrative for Northern Ireland, reinforcing the border's role in shaping cultural identities. During the Troubles, the club's location at 90 Lisburn Road (Belfast) became a sanctuary for artists from diverse backgrounds. It promoted 'cross-community' activities and served as a space of artistic neutrality and safety. Up until its closure in 2007, these efforts marked the club as a pioneer in fostering inclusivity and unity through art.
+
+Hall, Stuart. "Cultural Identity and Diaspora." Undoing Place?: A Geographical Reader, edited by L. McDowell, 1st ed., Routledge, 1997, pp. 231-43.
+		</td>
+	</tr>
+</table>
+
+
+<table id="Caterina-Resta">
+	<tr>
+		<td class="speaker">
+			<h3 class="h3-sub-head"><b>Caterina Resta</b></h3>
+		</td>
+	</tr>
+	
+	<tr>
+        <td class="title">
+			Walled Borders.
+	Beyond immunitary politics</td>
+    </tr>
+
+    <tr>
+        <td class="abstract">
+			The process of globalisation is clearly at a turning point. Following a period of growth characterised
+	by the dissolution of trade barriers, caused by the seemingly relentless spread of the global market,
+	the enduring economic and financial crisis has brought about a halt to this expansion. In Europe, the
+	growth in the number of immigrants has given rise to ‘immunitarian’ politics. This term refers to
+	new nationalistic policies, which are based on a fear of contamination by foreign elements, which
+	are often seen as a threat to cultural identity and economic well-being. ‘Sovereignism’ advocates for
+	a retreat to the autonomous nation-state and its unassailable frontiers as a defence against incursions
+	by so-called new “barbarians.” Beyond the inherently regressive nature of ‘sovereignist’ responses,
+	which view borders solely as defensive walls rather than passable thresholds, it is necessary to
+	revisit the very concept of sovereignty, not just in its narrow political sense. This involves
+	examining the complex interrelation of sovereignty, selfhood, identity, affiliation, and territory that
+	has, since the Modern Age, underpinned what Jacques Derrida referred to as ‘topopolitics’—a
+	politics founded on the clear demarcation, drawn by borders, between inside and outside, self and
+	other. It is only through the deconstruction of this relationship that we can envision a different
+	concept of citizenship, beyond the confines of the nation-state, and new forms of global
+	cohabitation.
+            
+        </td>
+    </tr>
+
+</table>
+
+<table id="Sinead-OSullivan">
+	<tr>
+		<td class="speaker">
+			<b><h3 class="h3-sub-head">Sinead O'Sullivan</h3></b>
+		</td>
+	</tr>
+	<tr>
+		<td class="title">
+			<i>Reading and Praying: Collects and Glosses in Carolingian Psalters</i>
+		 
+		</td>
+	</tr>
+
+	<tr>
+		<td class="abstract">The creation of Carolingian psalters comprising prefaces, psalms, glosses, collects, canticles, creeds, prayers, litanies, and illustrations finds its counterpoint in
+			Carolingian books of Vergil with their prefaces, poems, glosses, commentaries, diagrams, and excerpts. Carolingian psalters manifestly demonstrate efforts to consolidate materials
+			around canonical texts. But with their liturgical and non-liturgical elements, psalters also raise questions about function and use. Short orations known as collects are a case in point.
+			Seeking mediation through Christ, these short texts written in minuscule script at the end of each psalm were ubiquitous in Carolingian psalters. Collects formed part of the Carolingian
+			reception of the Psalms, a work recited in its entirety each week in monasteries and cathedral schools as part of the prayers, chants, and readings intoned during the Divine Office.
+			By the ninth century, collects were regularly copied in psalters. Either added after the systematic annotation in the marginal space deployed for the glosses or transcribed like
+			the psalm verses in the central space reserved for the main text, collects challenge the notion of a clear boundary between gloss and addition, text and minitext.
+			My paper shows that in Carolingian psalters, the collects were not stand-alone minitexts. Nor indeed was their purpose purely devotional.
+			These prayers, originally perhaps serving a liturgical purpose, must be read in conjunction with the other materials on the manuscript page. Text, gloss, and prayer operated in tandem.
+			Private study and public devotion went hand in hand. Reading and praying were interconnected. More broadly, my paper spotlights the importance of prayer in the Carolingian Age,
+			arguing that an empire of prayer had emerged in Carolingian Europe.
+		</td>
+	</tr>
+</table>
+
+<table id="Valentina-Surace">
+	<tr>
+		<td class="speaker">
+			<h3 class="h3-sub-head"><b>Valetina Surace</b></h3>
+		</td>
+	</tr>
+	
+	<tr>
+        <td class="title">Bordering as the weak breaking force of border subjects</td>
+    </tr>
+
+    <tr>
+        <td class="abstract">Border Studies scholars have long since considered borders neither as given entities nor merely as markers and maintainers of state sovereignty.
+		They have shifted their perspective from the static notion of a border to a procedural understanding of the bordering as a process
+		of relations between power and people (Pijpers, Van der Velde, Van Houtum, Van Naerssen, Vaughan-Williams). Beyond their function 
+		as demarcations that delineate distinct territories, they consider borders as disciplinary mechanisms of power as they are erected 
+		specifically to restrict undesirable classes of humans (Geddes, Häkli, Mountz). This paper aims to elaborate on the role of borders 
+		in everyday life and <i>how</i> of bordering, drawing upon Judith Butler’s thought. Based on Foucauldian concept of governmentality, 
+		Butler shows how norms operate to decide the question of who will be a human subject. The other against which the human is made by 
+		norms is a <i>border subject</i>, i.e. the inhuman, the beyond the human, the less than human, the <i>border</i> that secures the human in its ostensible reality.
+		The power of norms is <i>performative</i>, as it homogenizes and excludes the non-conforming. However, the performativity is aporetic. On the one hand, performative power
+		is a <i>disciplining exercise</i> that normalizes, configuring the normative standard, on the basis of which subjects are either recognised as<i>normal</i> or categorised as <i>abnormal</i>.
+		On the other hand, considering that the performative efficacy of a norm depends on being repeated, an unconventional repetition can act as a <i>breaking force</i>, as a process
+		involving performative bottom-up negotiations conducted by those who inhabit the borderland or are born crossing the normative border. These weak individuals at the borderline
+		perform work that does and undoes the meaning of the borders, which can thus be accounted for in their double-function as both <i>markers of belonging and places of becoming</i> (Brambilla). 
+        </td>
+    </tr>
+
+</table>
+
+
+
+
+<table id="Massimo-Villani">
+	<tr>
+		<td class="speaker">
+			<b><h3 class="h3-sub-head">Massimo Villani</h3></b>
+		</td>
+	</tr>
+	<tr>
+		<td class="title">
+			<i>Cum-finis</i>. Our present between indeterminacy and infinity.
+		 
+		</td>
+	</tr>
+
+	<tr>
+		<td class="abstract">The thesis I would like to assert is that the most urgent task for contemporary thought is to
+			distinguish between the infinite and the indefinite. On one side, what Hegel would call the "bad
+			infinite": the blind and cynical dynamization of techno-capitalism, which conceives no limit to its
+			expansion, but only thresholds [Schranken] that can be infinitely shifted (both extensively and
+			intensively). On the other hand, what Hegel again conceives as the true infinity: the openness that,
+			in the unavoidable finiteness of every existence, forces the moment of the heterogeneous, the
+			immeasurability of the relation. In this case, it is about determining a singularity through a
+			boundary [Grenze] that emerges from it, but exposes it to its alterity. I would like to explore this
+			theme in light of the epistemological turn that, starting from the 1970s, has conceived the entire
+			world - natural and human, material and symbolic - under the sign of indeterminacy.
+		</td>
+	</tr>
+</table>
+
+<table id="Craig-Wallace">
+	<tr>
+		<td class="speaker">
+			<h3 class="h3-sub-head"><b>Craig Wallace</b></h3>
+		</td>
+	</tr>
+	<tr>
+		<td class="title">
+			Porous Borders, mise-en-scène and mise-en-abyme in Alan Moore’s Jerusalem
+		</td>
+	</tr>
+
+	<tr>
+		<td class="abstract">
+			Porous Borders, mise-en-scène and mise-en-abyme in Alan Moore’s Jerusalem
+This paper will examine the fragility of boundaries and allusions to the framed
+borders of film in the novel Jerusalem (2016) by Alan Moore, where a
+multidimensional conceptualization of time and space is realized through an
+engagement with mise-en-scène and mise-en-abyme. The paper will draw on
+examples from early moving image, cinema and the avant-garde, from Edward
+Muybridge, Charlie Chaplin, Robert Wiene, Dziga Vertov and Fernand Léger. The
+analysis will draw from Laura Mulvey’s work on the porous boundaries between
+stillness and the moving image: a single frame of a celluloid film strip represents a
+moment in time, and a sequence of frames projected at the speed of 24 frames a
+second conveys the illusion of movement, and permits the possibility of returning to
+and repeating a fragment of time. For Mulvey, Chaplin embodies the cinematic
+framing and mechanization of a human figure, and he appears as a character in
+Jerusalem. A series of frames on a reel of celluloid film, with a beginning and end
+that replay on a loop, figure in the novel for broader themes relating to the concepts of
+entropy and eternalism. Characters move through the layered landscapes of the
+Boroughs in Northampton, the house on the borderland, the ghost-seam, or Mansoul,
+as if in a monochrome moving picture with piano accompaniment. The imagery often
+has a silent-film aesthetic, with landscapes akin to compositions within a film frame,
+and the narrative structure achieves the effect of a mise-en-abyme with frames
+receding towards an end-point. The motif of the strip of film alludes to the
+coexistence of the past, present, and future, and as the reel is cranked through the
+projector towards annihilation and destruction, the text reflects on environmental
+catastrophe and the demolition of working-class communities, and reconciles memory
+with the lost landscapes of the past.
+		</td>
+	</tr>
+</table>
+
+	<div>
+
+		<footer id="footer">
+		  <div class="copyright">
+			<!-- First row for icons -->
+			<ul class="contact">
+			  <li>
+				<a href="https://www.qub.ac.uk">
+				  <img src="https://www.wemakescholars.com/admin/uploads/providers/cbeVGa9KVNyYBS8_OXTXqYl5C73MTuNZ.webp" height="100" width="100" alt="QUB Icon">
+				</a>
+			  </li>
+		
+			  <li>
+				<a href="https://international.unime.it">
+				  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBlBt2j2OwlmmkVUqFX5jeXbVPx0S1u80kX-lncOtz1A&s" height="100" width="100" alt="Messina Icon">
+				</a>
+			  </li>
+		
+			  <li>
+				<a href="https://archivio.unime.it/it/centri/cesmis">
+				  <img src="https://github.com/MindTheGap2024/Conference2024/blob/main/Simbola.png?raw=true" height="100" width="100" alt="Simbola icon">
+				</a>
+			  </li>
+			</ul>
+		  </div>
+		
+			<!-- Second row for labels -->
+			<ul class="label-row">
+			  <li>Queen's University Belfast</li>
+			  <li>Università degli Studi di Messina Dipartimento di Civilità Antiche e Moderne</li>
+			  <li>Centro Europeo di Studi su Mito e Simbolo</li>
+			</ul>
+		  </div>
+		</footer>
+		
+	  </div>
+
+
+
+
+
+</body>
+
+</html>
