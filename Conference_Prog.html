@@ -1,0 +1,560 @@
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,
+	initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="styles.css">
+	  <style>
+
+footer {
+  background-color: #333; /* Set background color */
+  padding: 30px; /* Add padding to create space around the icons */
+  text-align: center; /* Center-align the icons */
+  border-bottom: 50px;
+}
+
+section-with-bg {
+      background-image: url('https://github.com/MindTheGap2024/Conference2024/blob/main/Slide1.jpeg?raw=true');
+      background-size: cover;
+      background-position: center;
+      min-height: 200vh; /* Adjust height as needed */
+      color: white; /* Set text color to contrast with background */
+      background-color: #333;
+    }
+
+    /* CSS for the section without background image */
+    .section-no-bg {
+      height: 100vh; /* Adjust height as needed */
+      background-color: #333; /* Set background color to whatever you want */
+    }
+
+a{color: #b8860b; text-decoration:none;}
+a.current{color: #52739e;}
+a.current:hover{color: #8B8000 ;}
+a:hover{color: #8B8000 ;}
+a:active{color: #8B8000 ;}
+
+h2,h3{clear:left; color: #8B8000 ; margin:1.5em 0em 1em 0em;}
+h1{font-size:2.67em;}
+h2{font-size:2.00em;}
+h3{font-size:1.67em;}
+h4{font-size:1.33em;}
+p{list-style:none; margin:24px auto 24px auto; padding:0px; width:900px; text-align:left;}
+
+
+i,em{font-style:italic;}
+b,strong{font-weight:bold;}
+sup{
+    vertical-align: super;
+    font-size: 0.8em;
+    line-height: 0;
+}
+sub{
+    vertical-align: sub;
+    font-size: 0.8em;
+    line-height: 0;
+}
+table{
+    width: 1000px;
+    margin: 12px auto 24px auto;
+    float: center;
+    /* UNCOMMENT THIS FOR DEBUGGING THE ALIGNMENT */
+    /*border: 1px solid black;*/
+}
+th,td{
+    text-align: left;
+    /* UNCOMMENT THIS FOR DEBUGGING THE ALIGNMENT */
+    /*border: 1px solid black;*/
+}
+
+h2.h2-session-info{ text-align: center;
+    color: white;
+
+}
+
+/* The Table on the Program Page */
+td.room{padding: 4px 12px 4px 4px; width: 90%; vertical-align:bottom; font-size:1.67em; color: #52739e; height:32px;}
+td.date{white-space:nowrap; width:130px; text-align:right; vertical-align:top; padding:4px 16px 0px 0px;}
+td.title{padding: 4px 12px 4px 4px; width: 90%; vertical-align:top; font-size:1.5em; color: white; height:32px;}
+td.title-special{padding: 4px 12px 4px 4px; width: 90%; vertical-align:top; font-size:1.67em; color: #52739e; height:32px; }
+td.speaker{padding: 4px 12px 4px 4px; font-style: italic; font-size:1em; max-height:999999px}
+td.abstract{padding: 4px 12px 12px 4px; font-size:1em; max-height:999999px}
+td.abstract img{display: block; margin: 4px auto 8px auto}
+
+/* My hacky way of making the site mobile-friendly */
+@media only screen and (max-width: 1100px) {
+    h2{font-size:3.00em;}
+    p{font-size:1.5em; line-height:1.5em;}
+    th,td,tr{font-size:1.5em; line-height:1.5em;}
+    td.date{font-size:1em; padding-top:0.5em;}
+    td.navigation{font-size:1.5em; padding:0px 20px 0px 20px;}
+    table.footer{font-size:0.33em;}
+}
+ h1.h1-centre{
+    align: center;
+ }
+
+ .navbar {
+  background-color: #333;
+  position: relative;
+  z-index: 999;
+  text-align: center;
+  vh:100px;
+ }
+
+ ul.special-items li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background: #333;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+.center-a{
+    text-align: center;
+    font-size: 20px;
+}
+
+</style>
+
+</head>
+
+<body>
+<section>
+
+    <nav class="navbar">
+        <ul>
+          <li><a href="https://mindthegap2024.github.io/MindTheGap2024">Home</a></li>
+          <li><a href="https://mindthegap2024.github.io/MindTheGap2024/About">About</a></li>
+      
+       <li>  
+
+              <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Abstracts">Abstracts</a>
+                <ul>
+                    <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Abstracts#Matthew-Bradley">Matthew Bradley</a></li>
+                    <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Abstracts#Rita-Fulco">Rita Fulco</a></li>
+                    <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Abstracts#Sandro-Gorgone">Sandro Gorgone</a></li>
+		    <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Abstracts#Giuliana-Gregorio">Giuliana Gregorio</a></li>
+		    <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Abstracts#Dominic-Harkin">Dominic Harkin</a></li>
+                    <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Abstracts#Caterina-Marino">Caterina Marino</a></li>
+                    <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Abstracts#Cahal-McLaughlin">Cahal McLaughlin and Siobhán Wills</a></li>
+                    <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Abstracts#Sinead-OSullivan">Sinead O’Sullivan</a></li>
+                    <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Abstracts#Aisling-Reid">Aisling Reid</a></li>
+                    <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Abstracts#Caterina-Resta">Caterina Resta</a></li>
+                    <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Abstracts#Valentina-Surace">Valentina Surace</a></li>
+                    <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Abstracts#Massimo-Villani">Massimo Villani</a></li>
+                    <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Abstracts#Craig-Wallace">Craig Wallace</a></li>
+                </ul>
+              </li>
+              <li>  
+                <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Speakers">Speakers</a>
+                  <ul>
+                      <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Speakers#Bradley-Speaker">Matthew Bradley</a></li>
+                      <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Speakers#Fulco-Speaker">Rita Fulco</a></li>
+                      <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Speakers#Gorgone-Speaker">Sandro Gorgone</a></li>
+		      <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Speakers#Giuliana-Gregorio">Giuliana Gregorio</a></li>
+                      <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Speakers#Harkin-Speaker">Dominic Harkin</a></li>
+		       <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Speakers#Cahal-Speaker">Cahal McLaughlin</a></li>
+                      <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Speakers#Marino-Speaker">Caterina Marino</a></li>
+                      <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Speakers#Sinead-Speaker">Sinead O’Sullivan</a></li>
+                      <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Speakers#Aisling-Speaker">Aisling Reid</a></li>
+                      <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Speakers#Caterina-Resta-Speaker">Caterina Resta</a></li>
+                      <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Speakers#Valentina-Speaker">Valentina Surace</a></li>
+                      <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Speakers#Massimo-Speaker">Massimo Villani</a></li>
+                      <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Speakers#Craig-Speaker">Craig Wallace</a></li>
+                      <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Speakers#Siobahn-Speaker">Siobhán Wills</a></li>
+                  </ul>
+                </li>
+		
+            <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Conference_Prog">Conference Programme</a>
+		    
+        <ul>
+          <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Conference_Prog#Morning-Session">Morning Session</a></li>
+          <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Conference_Prog#Afternoon-Session">Afternoon Session</a></li>
+          <li><a href="Final_Program.pdf" download>Download Programme</a></li>
+     <li><a href="Final_Poster.pdf" download>Download Poster</a></li>
+        </ul>
+		    
+          </li>
+          <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Zoom_Link">Zoom Link</a></li>
+        </ul>
+      </nav>
+
+
+  <h1 class="h1-sect-bg">Mind the Gap 2024</h1>
+
+  <h2 class="h2-sect-bg">Borders, Limits and Frontiers</h2>
+
+  <hr>
+
+  <h2 class="h2-sect-bg">Opening Remarks<a id="Opening-Remarks"></a></h2>
+
+  <h3 class="h3-sub-head">8:30-8:45 (London) / 9:30-9:45 (Rome)</h3>
+  <h3 class="h3-sub-head">Giuseppe Ucciardello (University of Messina)</h3>
+
+  <hr>
+
+  <h2 class="h2-sect-bg">Morning Session<a id="Morning-Session"></a></h2>
+
+  <hr>
+
+  <h3 class="h3-sub-head">Panel 1: 8:45-10:30 (London) / 9:45-11:30 (Rome)</h3>
+  <h3 class="h3-sub-head">Chair: Giuliana Gregorio (University of Messina)</h3>
+
+  <hr>
+	
+  <table id="Caterina-Resta">
+      <tr>
+          <td class="date" rowspan="3">
+          </td>
+          <td class="title">
+            Caterina Resta (University of Messina)
+          </td>
+      </tr>
+      <tr>
+          <td class="speaker">
+            <i>Walled Borders. Beyond Immunitary Politics.</i>
+          </td>
+      </tr>
+
+  </table>
+
+  <table id="Qub-Speaker-1">
+      <tr>
+          <td class="date" rowspan="3">
+          </td>
+          <td class="title">
+		Sinead O’Sullivan (Queen’s University Belfast)
+          </td>
+      </tr>
+      <tr>
+          <td class="speaker">
+              <i>Reading and Praying: Collects and Glosses in Carolingian Psalters
+              </i>
+          </td>
+      </tr>
+
+  </table>
+
+  <table id="Rita-Fulco">
+      <tr>
+          <td class="date" rowspan="3">
+          </td>
+          <td class="title">
+            Rita Fulco (University of Messina)
+          </td>
+      </tr>
+      <tr>
+          <td class="speaker">
+            <i>Borders and Neo-Nationalism. A Geo-Philisophical Approach.</i>
+          </td>
+      </tr>
+  </table>
+
+  <table id="Dominic-Harkin">
+    <tr>
+        <td class="date" rowspan="3">
+        </td>
+        <td class="title">
+          <b>Flash Presentation</b> Dominic Harkin (Queen’s University Belfast)
+        </td>
+    </tr>
+    <tr>
+        <td class="speaker">
+            <i>Funes the Arboreus: Border(less) Ecologies in Borges' Ficciones</i>
+        </td>
+    </tr>
+
+</table>
+
+
+<table id="Discussion-1">
+    <tr>
+        <td class="date" rowspan="3">
+        </td>
+        <td class="title">
+            Discussion       
+        </td>
+    </tr>
+</table>
+
+  <hr>
+
+  <h3 class="h3-sub-head">Panel 2: 10:45-12:00 (London) / 11:45-13:00 (Rome)</h3>
+  <h3 class="h3-sub-head">Chair: Craig Wallace (Queen’s University Belfast)</h3>
+
+  <hr>
+
+  <table id="Sandro-Gorgone">
+    <tr>
+        <td class="date" rowspan="3">
+        </td>
+        <td class="title">
+            Sandro Gorgone (University of Messina)
+        </td>
+    </tr>
+    <tr>
+        <td class="speaker">
+            <i>Liminal Places and not-Places</i>
+        </td>
+    </tr>
+
+</table>
+
+  <table id="Caterina-Marino">
+    <tr>
+        <td class="date" rowspan="3">
+        </td>
+        <td class="title">
+            Caterina Marino (University of Messina)
+        </td>
+    </tr>
+    <tr>
+        <td class="speaker">
+            <i>Frontiers of Sexual Difference. The Phantasm of Gender</i>
+        </td>
+    </tr>
+</table>
+
+  <table id="Matthew-Bradley">
+    <tr>
+        <td class="date" rowspan="3">
+        </td>
+        <td class="title">
+          <b>Flash Presentation</b> Matthew Bradley (Queen’s University Belfast)
+        </td>
+    </tr>
+    <tr>
+        <td class="speaker">
+          <i>"Thou wenest Ich be a Beggere”</i> Borders and the Habitus in Late Medieval English Romance
+        </td>
+    </tr>
+
+</table>
+
+
+<table id="Discussion-2">
+    <tr>
+        <td class="date" rowspan="3">
+        </td>
+        <td class="title">
+            Discussion       
+        </td>
+    </tr>
+</table>
+
+<hr>
+	
+</table>
+
+
+  <h3 class="h3-sub-head">Lunch Break: 12:00-14:00 (London) / 13:00-15:00 (Rome) </h3>
+<hr>
+  <h2 class="h2-sect-bg">Afternoon Session<a id="Afternoon-Session"></a></h2>
+
+  <hr>
+
+  <h3 class="h3-sub-head">Panel 3: 14:00-15:30 (London) / 15:00-16:30 (Rome)</h3>
+  <h3 class="h3-sub-head">Sandro Gorgone (University of Messina)</h3>
+
+    <table id="Giuliana-Gregorio">
+      <tr>
+          <td class="date" rowspan="3">
+          </td>
+          <td class="title">
+            Giuliana Gregorio (University of Messina)
+          </td>
+      </tr>
+      <tr>
+          <td class="speaker">
+            <i>Borders and Language: Hermeneutic-Philosophical Issues</i>
+          </td>
+      </tr>
+
+  </table>
+
+  <table id="Craig-Wallace">
+      <tr>
+          <td class="date" rowspan="3">
+          </td>
+          <td class="title">
+            Craig Wallace (Queen’s University Belfast)
+          </td>
+      </tr>
+      <tr>
+          <td class="speaker">
+              <i>Porous Borders, mise-en-scene and mise-en-abyme in Alan Moore's Jerusalem</i>
+          </td>
+      </tr>
+
+  </table>
+
+	
+<table id="Valentina-Surace">
+    <tr>
+        <td class="date" rowspan="3">
+        </td>
+        <td class="title">
+            Valentina Surace (University of Messina)
+        </td>
+    </tr>
+    <tr>
+        <td class="speaker">
+            <i>Bordering as the Weak Breaking Force of Border Subjects</i>
+        </td>
+    </tr>
+</table>
+
+<table id="Discussion-3">
+    <tr>
+        <td class="date" rowspan="3">
+        </td>
+        <td class="title">
+            Discussion       
+        </td>
+    </tr>
+</table>
+
+<hr>
+
+  <h3 class="h3-sub-head">Panel 4: 15:30-17:00 (London) / 16:30-18:00 (Rome)</h3>
+  <h3 class="h3-sub-head"> Chair: Rita Fulco (University of Messina)</h3>
+
+  <hr>
+
+<table id="Aisling-Reid">
+    <tr>
+        <td class="date" rowspan="3">
+        </td>
+        <td class="title">
+            Aisling Reid (Queen's University Belfast)
+        </td>
+    </tr>
+    <tr>
+        <td class="speaker"><i>Border Brushstrokes: The Ulster Arts Club’s Cultural Canvas</i>
+        </td>
+    </tr>
+
+</table>
+
+<table id="Massimo-Villani">
+    <tr>
+        <td class="date" rowspan="3">
+        </td>
+        <td class="title">
+            Messimo Villani (University of Salerno)
+        </td>
+    </tr>
+    <tr>
+        <td class="speaker"><i>Our Present Between Indeterminacy and Infinity.</i>
+        </td>
+    </tr>
+
+</table>
+
+<table id="Cahal-McLaughlin">
+    <tr>
+        <td class="date" rowspan="3">
+        </td>
+        <td class="title">
+            <b>Pre-Recorded Presentation</b> Cahal McLaughlin and Siobhán Wills (Queen’s University Belfast)
+        </td>
+    </tr>
+    <tr>
+        <td class="speaker">
+            <i>We Fight for this Land</i>
+        </td>
+    </tr>
+</table>
+
+<table id="Discussion-4">
+    <tr>
+        <td class="date" rowspan="3">
+        </td>
+        <td class="title">
+            Discussion        
+        </td>
+    </tr>
+</table>
+
+<hr>
+
+<h2 class="h2-sect-bg">Closing Remarks</h2>
+
+<table id="Discussion-5">
+    <tr>
+        <td class="date" rowspan="3">
+        </td>
+        <td class="title">
+            <b>Closing Remarks</b> Aisling Reid and Valentina Surace       
+        </td>
+    </tr>
+</table>
+
+<hr>
+
+</section>
+
+
+<section>    
+<h2 class="h2-sect-bg">Conference Programme PDF</h2>
+	<img src="Mind_gap_brochure_page_1.jpg" class="center">
+	<br>
+	<img src="Mind_gap_brochure_2.jpg" class="center">
+
+  <div>
+    <a href="Final_Poster.pdf" download><p class="center-a">Download Poster</p></a>
+    <a href="Final_Program.pdf" download><p class="center-a">Download Programme</p></a>
+  </div>
+
+</section>
+
+<div>
+
+    <footer id="footer">
+      <div class="copyright">
+        <!-- First row for icons -->
+        <ul class="contact">
+          <li>
+            <a href="https://www.qub.ac.uk">
+              <img src="https://www.wemakescholars.com/admin/uploads/providers/cbeVGa9KVNyYBS8_OXTXqYl5C73MTuNZ.webp" height="100" width="100" alt="QUB Icon">
+            </a>
+          </li>
+    
+          <li>
+            <a href="https://international.unime.it">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBlBt2j2OwlmmkVUqFX5jeXbVPx0S1u80kX-lncOtz1A&s" height="100" width="100" alt="Messina Icon">
+            </a>
+          </li>
+    
+          <li>
+            <a href="https://archivio.unime.it/it/centri/cesmis">
+              <img src="https://github.com/MindTheGap2024/Conference2024/blob/main/Simbola.png?raw=true" height="100" width="100" alt="Simbola icon">
+            </a>
+          </li>
+        </ul>
+      </div>
+    
+        <!-- Second row for labels -->
+        <ul class="label-row">
+          <li>Queen's University Belfast</li>
+          <li>Università degli Studi di Messina Dipartimento di Civilità Antiche e Moderne</li>
+          <li>Centro Europeo di Studi su Mito e Simbolo</li>
+        </ul>
+      </div>
+    </footer>
+    
+  </div>
+
+
+</body>
+
+</html>
