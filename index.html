@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mind the Gap 2024</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+
+
+    .logo {
+      font-size: 1.5em;
+      color: white;
+    }
+
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%; /* or any fixed width you desire */
+  max-height: 100%; /* set the desired height */
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: auto;
+  background-image: url("");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.parent-container {
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Center the image vertically */
+    height: 100vh; /* Set the height of the parent container to 100% of the viewport height */
+    /* Additional styles for the parent container */
+    /* For example: background-color: #f0f0f0; */
+}
+
+    /* CSS for the section without background image */
+    .section-no-bg {
+      height: 50vh; /* Adjust height as needed */
+      background-color: #333; /* Set background color to whatever you want */
+      margin: 1em;
+    }
+
+
+.section-with-bg {
+      background-image: url("MindtheGap.jpg");
+      background-size: cover;
+      background-position: center;
+      height: 100vh; /* Adjust height as needed */
+      color: white; /* Set text color to contrast with background */
+      background-color: #333;
+    }
+.back-sect-right{
+    position: relative;
+    width: 100%; /* Adjust width as needed */
+    height: 300px; /* Adjust height as needed */
+}
+
+.back-sect-right p {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 0; /* Remove default margin */
+    padding: 10px; /* Adjust padding as needed */
+}
+
+.container {
+  display: flex;
+}
+
+.image {
+  flex: 1;
+}
+
+.image img {
+  width: 100%;
+  height: auto;
+}
+
+.organizing-committee {
+  flex: 1;
+  padding-left: 20px;
+  max-width: 300px; /* Set a fixed width for the committee section */
+  overflow: auto; /* Enable scrolling if the content exceeds the fixed width */
+}
+
+.organizing-committee h2 {
+  font-size: 24px;
+}
+
+.organizing-committee ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.organizing-committee li {
+  margin-bottom: 10px;
+}
+.company-details{
+    overflow: hidden;
+    padding: 3em 0em;
+    background: #7393B3;
+    text-align: center;
+    margin-top: 5em;
+}
+
+	.header {text-indent:20px;
+		text-align:left;
+  		font-size:64px; 
+	}
+
+	h2 {text-indent:20px;
+	font-size:32px;
+	   }
+
+
+	.h1-sect-bg{text-indent: 20px;
+		    font-size:64px;
+		    color: white;
+		    margin-bottom: 20px;
+		}
+	.h2-sect-bg{text-indent: 20px;
+		    font-size: 32px;
+		    color: white;
+		    display: block;}
+      
+        p.p-img-cent{ text-align: left;
+                      font-size: 20px;
+        }
+
+  </style>
+</head>
+
+
+<nav class="navbar">
+  <ul>
+    <li><a href="https://mindthegap2024.github.io/MindTheGap2024">Home</a></li>
+    <li><a href="https://mindthegap2024.github.io/MindTheGap2024/About">About</a></li>
+
+      <li>  
+            <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Abstracts">Abstracts</a>
+              <ul>
+                  <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Abstracts#Matthew-Bradley">Matthew Bradley</a></li>
+                  <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Abstracts#Lorraine-Dennis">Lorraine Dennis</a></li>
+                  <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Abstracts#Dominic-Harkin">Dominic Harkin</a></li>
+                  <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Abstracts#Rita-Fulco">Rita Fulco</a></li>
+                  <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Abstracts#Gorgone">Sandro Gorgone</a></li>
+                  <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Abstracts#Caterina-Marino">Caterina Marino</a></li>
+                  <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Abstracts#Cahal-McLaughlin">Cahal McLaughlin</a></li>
+                  <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Abstracts#Sinead-OSullivan">Sinead O’Sullivan</a></li>
+                  <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Abstracts#Aisling-Reid">Aisling Reid</a></li>
+                  <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Abstracts#Caterina-Resta">Caterina Resta</a></li>
+                  <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Abstracts#Valentina-Surace">Valentina Surace</a></li>
+                  <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Abstracts#Massimo-Villani">Massimo Villani</a></li>
+                  <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Abstracts#Craig-Wallace">Craig Wallace</a></li>
+                  <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Abstracts#Siobahn-Willis">Siobahn Willis</a></li>
+
+              </ul>
+            </li>
+            <li>  
+              <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Speakers">Speakers</a>
+                <ul>
+                    <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Speakers#Bradley-Speaker">Matthew Bradley</a></li>
+                    <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Speakers#Dennis-Speaker">Lorraine Dennis</a></li>
+                    <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Speakers#Fulco-Speaker">Rita Fulco</a></li>
+                    <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Speakers#Gorgone-Speaker">Sandro Gorgone</a></li>
+                    <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Speakers#Harkin-Speaker">Dominic Harkin</a></li>
+                    <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Speakers#Marino-Speaker">Caterina Marino</a></li>
+                    <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Speakers#Cahal-Speaker">Cahal McLaughlin</a></li>
+                    <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Speakers#Sinead-Speaker">Sinead O’Sullivan</a></li>
+                    <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Speakers#Aisling-Speaker">Aisling Reid</a></li>
+                    <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Speakers#Caterina-Resta-Speaker">Caterina Resta</a></li>
+                    <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Speakers#Valentina-Speaker">Valentina Surace</a></li>
+                    <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Speakers#Massimo-Speaker">Massimo Villani</a></li>
+                    <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Speakers#Craig-Speaker">Craig Wallace</a></li>
+                    <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Speakers#Siobahn-Speaker">Siobahn Willis</a></li>
+
+                </ul>
+              </li>
+      <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Conference_Prog">Conference Programme</a>
+	      
+        <ul>
+          <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Conference_Prog#Morning-Session">Morning Session</a></li>
+          <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Conference_Prog#Afternoon-Session">Afternoon Session</a></li>
+          <li><a href="Final_Program.pdf" download>Download Programme</a></li>
+     <li><a href="Final_Poster.pdf" download>Download Poster</a></li>
+        </ul>
+	      
+    </li>
+    <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Zoom_Link">Zoom Link</a></li>
+  </ul>
+</nav>
+
+<body>
+
+
+
+
+<section class="section-with-bg">
+	<h1 class="h1-sect-bg-1">Mind the Gap 2024</h1>
+	<h2 class="h2-sect-bg-1">Borders, Limits and
+	Frontiers</h2>
+	<p class="p-sect-bg">Mind the Gap 2024 is a one day<br>
+	online conference that explores the complex<br>
+	nature of borders in a global context. Speakers from<br>
+	various disciplines will consider borders as dynamic<br>
+	constructs that are shaped by policy, culture and human<br>
+	interaction.</p>
+</section>
+
+<section class="section-abstract">
+
+  <div class="container">
+    <div class="img-container-index">
+      <div class="image-left">
+
+        <img src="https://media.npr.org/assets/img/2015/04/15/ceuta-fence-landov_custom-638d8ddde8ec6c37183e3d89fc7d15b06dbef63e.jpg" alt="Border Crossing EU" class="img-left">
+        </div>
+      </div>
+      <div class="text-container-index">
+
+      <h2 class="h2-img-left">Conference Programme</h2>
+		  <p class="p-img-left">Explore border studies through our conference's detailed
+		  programme. Engage with expert insights on the modern
+		  implications of borders. Click here to view the programme</p>
+		  <br>
+			<button class="btn" onclick="window.location.href ='https://mindthegap2024.github.io/MindTheGap2024/Conference_Prog'">Conference Programme</button>
+      <a href="https://mindthegap2024.github.io/MindTheGap2024/Conference_Prog"></a>
+
+
+
+      </div>
+      </div>
+</section>
+
+<section class="section-abstract">
+
+  <div class="container">
+    <div class="text-container-index">
+      <h2 class="h2-img-left">Abstracts</h2>
+      <p class="p-img-left">Click here for Abstracts</p>
+        <button class="btn" onclick="window.location.href ='https://mindthegap2024.github.io/MindTheGap2024/Abstracts'">Abstracts</button>
+        <a href="https://mindthegap2024.github.io/MindTheGap2024/Abstracts"></a>
+       
+  
+    </div>
+    <div class="img-container-index">
+      <div class="image-right">
+    <img src="https://c.files.bbci.co.uk/698E/production/_98122072_1a1-5.jpg" alt="Border Crossing Ireland" class="image-right" >
+    </div>
+    </div>
+    </div>
+  </section>
+
+
+<section class="section-abstract">
+
+  <div class="container">
+    <div class="img-container-index">
+
+      <div class="image-left">
+       <img src="https://www.english-heritage.org.uk/siteassets/home/visit/places-to-visit/hadrians-wall/history/hadrians-wall-1.jpg?w=1440&h=612&mode=crop&scale=both&quality=100&anchor=NoFocus&WebsiteVersion=20240220070057" alt="Border Hadrians Wall" class="img-right">
+      </div>
+    </div>
+    <div class="text-container-index">
+      <h2 class="h2-img-left">Speakers</h2>
+      <p class="p-img-right">Click here for Speaker informtation </p>
+
+      <button class="btn" onclick="window.location.href ='https://mindthegap2024.github.io/MindTheGap2024/Speakers'">Speakers</button>
+      <a href="https://mindthegap2024.github.io/MindTheGap2024/Speakers"></a>
+
+      
+
+    </div>
+
+  </div>
+
+
+</section>
+
+<section class="section-abstract">
+
+  <div class="container">
+    <div class="text-container-index">
+      <h2 class="h2-img-right">Organising Committee</h2>
+      <table id="organising-committee">
+        <tr>
+             <td><p class="p-img-cent">Aisling Reid (Queen's University Belfast)</p></td>
+        </tr>
+        <tr>
+
+          <td><p class="p-img-cent">Valentine Surace(Universita degli Studi Messina)</p></td>
+
+        </tr>
+
+  </table>
+
+       
+  
+    </div>
+    <div class="img-container-index">
+      <div class="image-right">
+    <img src="https://www.telegraph.co.uk/content/dam/news/2019/01/17/TELEMMGLPICT000185835396_trans_NvBQzQNjv4BqpVlberWd9EgFPZtcLiMQfyf2A9a6I9YchsjMeADBa08.jpeg?imwidth=680g" alt="Border Crossing Ireland" class="image-right" >
+    </div>
+    </div>
+    </div>
+  </section>
+
+</div>
+<div>
+
+  <footer id="footer">
+    <div class="copyright">
+      <!-- First row for icons -->
+      <ul class="contact">
+        <li>
+          <a href="https://www.qub.ac.uk">
+            <img src="https://www.wemakescholars.com/admin/uploads/providers/cbeVGa9KVNyYBS8_OXTXqYl5C73MTuNZ.webp" height="100" width="100" alt="QUB Icon">
+          </a>
+        </li>
+  
+        <li>
+          <a href="https://international.unime.it">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBlBt2j2OwlmmkVUqFX5jeXbVPx0S1u80kX-lncOtz1A&s" height="100" width="100" alt="Messina Icon">
+          </a>
+        </li>
+  
+        <li>
+          <a href="https://archivio.unime.it/it/centri/cesmis">
+            <img src="https://github.com/MindTheGap2024/Conference2024/blob/main/Simbola.png?raw=true" height="100" width="100" alt="Simbola icon">
+          </a>
+        </li>
+      </ul>
+    </div>
+  
+      <!-- Second row for labels -->
+      <ul class="label-row">
+        <li>Faculty Research Initiatives Fund (QUB)</li>
+        <li>Università degli Studi di Messina Dipartimento di Civilità Antiche e Moderne</li>
+        <li>Centro Europeo di Studi su Mito e Simbolo</li>
+      </ul>
+    </div>
+  </footer>
+  
+</div>
+
+</body>
+
+</html>
