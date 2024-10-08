@@ -1,282 +1,134 @@
-<html>
-
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
     <link rel="stylesheet" href="styles.css">
     <style>
+        /* Centering section with background image */
+        .section-with-bg {
+            background-image: url('Kafka2.jpg');
+            background-size: cover;
+            background-position: center;
+            min-height: 100vh;
+            color: white;
+            background-color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            flex-direction: column;
+        }
 
-p.p-img-right{font-size: 20px;
-			text-align: center;
-			margin-bottom: 1em;
-			margin-left: 1em;
-      left: 0;
-			display: block;
-      line-height: 1.5;
-      font-family:"Calibri", sans-serif;
-		}
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
 
-    footer {
-  background-color: #333; /* Set background color */
-  padding: 30px; /* Add padding to create space around the icons */
-  text-align: center; /* Center-align the icons */
-  border-bottom: 50px;
-}
+        form label,
+        form input {
+            font-size: 18px;
+            margin: 10px 0;
+        }
 
-section-with-bg {
-      background-image: url('Kafka2.jpg');
-      background-size: cover;
-      background-position: center;
-      min-height: 200vh; /* Adjust height as needed */
-      color: white; /* Set text color to contrast with background */
-      background-color: #333;
-    	display: flex;
-    	justify-content: center; /* Centers content horizontally */
-    	align-items: center;     /* Centers content vertically */
-    	text-align: center;      /* Centers text within the container */
-}
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #b8860b;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
 
-    /* CSS for the section without background image */
-    .section-no-bg {
-      height: 100vh; /* Adjust height as needed */
-      background-color: #333; /* Set background color to whatever you want */
-    }
+        button:hover {
+            background-color: #8B8000;
+        }
 
-a{color: #b8860b; text-decoration:none;}
-a.current{color: #52739e;}
-a.current:hover{color: #8B8000 ;}
-a:hover{color: #8B8000 ;}
-a:active{color: #8B8000 ;}
+        footer {
+            background-color: #333;
+            padding: 30px;
+            text-align: center;
+        }
 
-h2,h3{clear:left; color: #8B8000 ; margin:1.5em 0em 1em 0em;}
-h1{font-size:2.67em;}
-h2{font-size:2.00em;}
-h3{font-size:1.67em;}
-h4{font-size:1.33em;}
-p{list-style:none; margin:24px auto 24px auto; padding:0px; width:900px; text-align:left;}
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
 
-i,em{font-style:italic;}
-b,strong{font-weight:bold;}
-sup{
-    vertical-align: super;
-    font-size: 0.8em;
-    line-height: 0;
-}
-sub{
-    vertical-align: sub;
-    font-size: 0.8em;
-    line-height: 0;
-}
-table{
-    width: 1000px;
-    margin: 12px auto 24px auto;
-    float: center;
-    /* UNCOMMENT THIS FOR DEBUGGING THE ALIGNMENT */
-    /*border: 1px solid black;*/
-}
-th,td{
-    text-align: left;
-    /* UNCOMMENT THIS FOR DEBUGGING THE ALIGNMENT */
-    /*border: 1px solid black;*/
-}
+        /* Other styles */
+        a {
+            color: #b8860b;
+            text-decoration: none;
+        }
 
-h2.h2-session-info{ text-align: center;
-    color: white;
+        a.current {
+            color: #52739e;
+        }
 
-}
+        a.current:hover {
+            color: #8B8000;
+        }
 
-/* The Table on the Program Page */
-td.room{padding: 4px 12px 4px 4px; width: 90%; vertical-align:bottom; font-size:1.67em; color: #52739e; height:32px;}
-td.date{white-space:nowrap; width:130px; text-align:right; vertical-align:top; padding:4px 16px 0px 0px;}
-td.title{padding: 4px 12px 4px 4px; width: 90%; vertical-align:top; font-size:1.5em; color: white; height:32px; text-align: center;}
-td.title-special{padding: 4px 12px 4px 4px; width: 90%; vertical-align:top; font-size:1.67em; color: #52739e; height:32px; }
-td.speaker{padding: 4px 12px 4px 4px; font-style: italic; font-size:1em; max-height:999999px; text-align: center;}
-td.abstract{padding: 4px 12px 12px 4px; font-size:1em; max-height:999999px; text-align: center;}
-td.abstract img{display: block; margin: 4px auto 8px auto}
-
-
-/* My hacky way of making the site mobile-friendly */
-@media only screen and (max-width: 1100px) {
-    h2{font-size:3.00em;}
-    p{font-size:1.5em; line-height:1.5em;}
-    th,td,tr{font-size:1.5em; line-height:1.5em;}
-    td.date{font-size:1em; padding-top:0.5em;}
-    td.navigation{font-size:1.5em; padding:0px 20px 0px 20px;}
-    table.footer{font-size:0.33em;}
-}
- h1.h1-centre{
-    align: center;
- }
-
- .navbar {
-  background-color: #333;
-  position: relative;
-  z-index: 999;
-  text-align: center;
-  vh:100px;
- }
-
- ul.special-items li {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  background: #333;
-}
-
-.center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-  }
-
-.center-a{
-    text-align: center;
-    font-size: 20px;
-}
-
-.h2-sect-bg-about{
-  font-size: 32px;
-  color: rgb( 247, 181, 0);
-  display: block;
-  text-align: center;}
-
+        h1 {
+            font-size: 2.67em;
+        }
     </style>
-  </head>
-
-
-
-  <nav class="navbar">
-  <ul>
-    <li><a href="https://kafka-2024.github.io/Conference/">Home</a></li>
-    <li><a href="https://kafka-2024.github.io/Conference/About">About</a></li>
-      <li>  
-            <li><a href="https://kafka-2024.github.io/Conference/Abstracts">Abstracts</a>
-              <ul>
-                  <li><a href="https://kafka-2024.github.io/Conference/Abstracts#Rebecca-Bamford">Rebecca Bamford</a></li>
-		  <li><a href="https://kafka-2024.github.io/Conference/Abstracts#Bradley-Speaker">Matthew Bradley</a></li>
-                  <li><a href="https://kafka-2024.github.io/Conference/Abstracts#Annaliso-Caputo">Annaliso Caputo</a></li>
-		  <li><a href="https://kafka-2024.github.io/Conference/Abstracts#Bruno-Cassara">Bruno Cassara</a></li>
-                  <li><a href="https://kafka-2024.github.io/Conference/Abstracts#Sandro-Gorgone">Sandro Gorgone</a></li>
-		  <li><a href="https://kafka-2024.github.io/Conference/Abstracts#Gregorio-abstract">Giuliana Gregorio</a></li> 
-		  <li><a href="https://kafka-2024.github.io/Conference/Abstracts#Dominic-Harkin">Dominic Harkin</a></li>
-                  <li><a href="https://kafka-2024.github.io/Conference/Abstracts#Caterina-Marino">Caterina Marino</a></li>
-                  <li><a href="https://kafka-2024.github.io/Conference/Abstracts#Natascia-Mattucci">Natascia Mattucci</a></li>
-                  <li><a href="https://kafka-2024.github.io/Conference/Abstracts#Aisling-Reid">Aisling Reid</a></li>
-                  <li><a href="https://kafka-2024.github.io/Conference/Abstracts#Caterina-Resta">Caterina Resta</a></li>
-		  <li><a href="https://kafka-2024.github.io/Conference/Abstracts#Giusy-Abstract">Giusy Strummiello</a></li>
-                  <li><a href="https://kafka-2024.github.io/Conference/Abstracts#Valentina-Surace">Valentina Surace</a></li>
-                  <li><a href="https://kafka-2024.github.io/Conference/Abstracts#Craig-Wallace">Craig Wallace</a></li>
-		  <li><a href="https://kafka-2024.github.io/Conference/Abstracts#Ucciardello-Speaker">Giuseppe Ucciardello</a></li>
-              </ul>
-            </li>
-            <li>  
-              <li><a href="https://kafka-2024.github.io/Conference/Speakers">Speakers</a>
-                <ul>
-                    <li><a href="https://kafka-2024.github.io/Conference/Speakers#Rebecca-Bamford">Rebecca Bramford</a></li>
-		    <li><a href="https://kafka-2024.github.io/Conference/Speakers#Bradley-Speaker">Matthew Bradley</a></li>
-                    <li><a href="https://kafka-2024.github.io/Conference/Speakers#Annaliso-Caputo">Annaliso Caputo</a></li>
-		    <li><a href="https://kafka-2024.github.io/Conference/Speakers#Bruno-Cassara">Bruno Cassara</a></li>
-                    <li><a href="https://kafka-2024.github.io/Conference/Speakers#Gorgone-Speaker">Sandro Gorgone</a></li>
-		    <li><a href="https://kafka-2024.github.io/Conference/Speakers#Giuliana-Gregorio">Sandro Gorgone</a></li>
-		    <li><a href="https://kafka-2024.github.io/Conference/Speakers#Harkin-Speaker">Dominic Harkin</a></li>
-                    <li><a href="https://kafka-2024.github.io/Conference/Speakers#Marino-Speaker">Caterina Marino</a></li>
-                    <li><a href="https://kafka-2024.github.io/Conference/Speakers#Mattucci-Speaker">Natascia Mattucci</a></li>
-                    <li><a href="https://kafka-2024.github.io/Conference/Speakers#Aisling-Speaker">Aisling Reid</a></li>
-                    <li><a href="https://kafka-2024.github.io/Conference/Speakers#Caterina-Resta-Speaker">Caterina Resta</a></li>
-		    <li><a href="https://kafka-2024.github.io/Conference/Speakers#Giusy-Speaker">Giusy Strummiello</a></li>
-                    <li><a href="https://kafka-2024.github.io/Conference/Speakers#Valentina-Speaker">Valentina Surace</a></li>
-                    <li><a href="https://kafka-2024.github.io/Conference/Speakers#Craig-Speaker">Craig Wallace</a></li>
-		    <li><a href="https://kafka-2024.github.io/Conference/Speakers#Ucciardello-Speaker">Giuseppe Ucciardello</a></li>
-                </ul>
-              </li>
-      <li><a href="https://kafka-2024.github.io/Conference/Conference_Prog">Conference Programme</a>
-	      
-        <ul>
-          <li><a href="https://kafka-2024.github.io/Conference/Conference_Prog#Morning-Session">Morning Session</a></li>
-          <li><a href="https://kafka-2024.github.io/Conference/Conference_Prog#Afternoon-Session">Afternoon Session</a></li>
-          <li><a href="Final_Program.pdf" download>Download Programme</a></li>
-     <li><a href="Final_Poster.pdf" download>Download Poster</a></li>
-        </ul>      
-    </li>
-    <li><a href="https://kafka-2024.github.io/Conference/Register">Register</a></li>
-    <li><a href="https://kafka-2024.github.io/Conference/Zoom_Link">Zoom Link</a></li>
-  </ul>
-</nav>
+</head>
 
 <body>
-<section class="section-with-bg">
-	<h1>Kafka 2024 Register</h1>
-    <form id="myForm">
-        <label for="fname">First Name:</label>
-        <input type="text" id="fname" name="fname">
-        <br>
-        <label for="surname">Surname:</label>
-        <input type="text" id="sname" name="sname">
-        <br>
-        <label for="email">Email:</label>
-        <input type="text" id="email" name="email">
-        <br>
-        <input type="submit" id="submit" name="submit">
-    </form>
+    <nav class="navbar">
+        <ul>
+            <li><a href="https://kafka-2024.github.io/Conference/">Home</a></li>
+            <!-- Other navigation items -->
+        </ul>
+    </nav>
 
-    <button onclick="runPythonScript()">Run Python Script</button>
+    <section class="section-with-bg">
+        <h1>Kafka 2024 Register</h1>
+        <form id="myForm">
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" name="fname">
+            <br>
+            <label for="surname">Surname:</label>
+            <input type="text" id="sname" name="sname">
+            <br>
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email">
+            <br>
+            <input type="submit" id="submit" name="submit">
+        </form>
 
-    <script>
-        function runPythonScript() {
-            // Prevent form submission
-            event.preventDefault();
+        <button onclick="runPythonScript()">Run Python Script</button>
 
-            // Get form data
-            var formData = new FormData(document.getElementById("myForm"));
+        <script>
+            function runPythonScript() {
+                event.preventDefault();
 
-            // Send form data to Python script
-            fetch("/Users/andrewgardener/Desktop/Aisling_Website/request.py", {
-                method: "POST",
-                body: formData
-            })
-            .then(response => response.text())
-            .then(data => {
-                // Handle response from Python script
-                console.log(data);
-            })
-            .catch(error => {
-                console.error("Error:", error);
-            });
-        }
-    </script>
-</section>
-    <footer id="footer">
+                var formData = new FormData(document.getElementById("myForm"));
 
+                fetch("/submit", {
+                    method: "POST",
+                    body: formData
+                })
+                .then(response => response.text())
+                .then(data => {
+                    console.log(data);
+                })
+                .catch(error => {
+                    console.error("Error:", error);
+                });
+            }
+        </script>
+    </section>
+
+    <footer>
         <div class="copyright">
-            <p></p>
- 
             <ul class="contact">
                 <li>
-			<a href="https://www.qub.ac.uk">
-                    		<img src="https://www.wemakescholars.com/admin/uploads/providers/cbeVGa9KVNyYBS8_OXTXqYl5C73MTuNZ.webp" height="100" width="100">
-			</a>
-                </li>
- 
-                <li>
-		  <a href="https://international.unime.it">
-                    <img src="https://github.com/MindTheGap2024/Conference2024/blob/main/Messina_uni_icon.png?raw=true" height="100" width="100">
-                </li>
- 
-                <li>
-		  <a href="https://archivio.unime.it/it/centri/cesmis">
-                    <img src="https://github.com/MindTheGap2024/Conference2024/blob/main/Simbola.png?raw=true" height="100" width="100">
-                </li>
-            </ul>
-        </div>
-    </footer>
-
-
-
-</body>
-
-</html>
+                    <a href="https://www.qub.ac.uk"><img src="https://www.wemakescholars
