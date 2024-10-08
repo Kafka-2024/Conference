@@ -1,93 +1,215 @@
 <html>
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width,
-	initial-scale=1.0">
-	<title>Kafka 2024 Register</title>
-	<link rel="stylesheet" href="styles.css">
-	  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      display: flex;
-      flex-direction: column; /* Set the main axis as vertical */
-      min-height: 100vh;
-    }
+<!DOCTYPE html>
+<html lang="en">
 
-    nav {
-      height: 70px; /* Adjust the height of the top frame as needed */
-      background-color: #333; /* Background color of the top frame */
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 0 20px; /* Add horizontal padding */
-    }
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
 
-    .logo {
-      font-size: 1.5em;
-      color: white;
-    }
+p.p-img-right{font-size: 20px;
+			text-align: center;
+			margin-bottom: 1em;
+			margin-left: 1em;
+      left: 0;
+			display: block;
+      line-height: 1.5;
+      font-family:"Calibri", sans-serif;
+		}
 
-    .nav-items {
-      display: flex;
-      align-items: center;
-    }
+    footer {
+  background-color: #333; /* Set background color */
+  padding: 30px; /* Add padding to create space around the icons */
+  text-align: center; /* Center-align the icons */
+  border-bottom: 50px;
+}
 
-    .nav-items a {
-      color: white;
-      text-decoration: none;
-      margin-left: 20px; /* Adjust the margin as needed */
-    }
-
-    .hero {
-      flex: 1;
-      background-image: url('');
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-      color: white; /* Text color on top of the image */
-      padding: 20px; /* Add padding to the content area */
-      display: flex;
-      align-items: left;
-      justify-content: left;
-      text-align: left;
-    }
-
-    .hero h1 {
-      font-size: 3em;
-      font-weight: bold;
-      margin: 0;
-      padding: 0;
-    }
-
-.section-with-bg {
-      background-image: url('https://media.npr.org/assets/img/2011/12/22/MindtheGap-0b02f70c129aa7f0fd0a090c9ee90a8aca1f0b16-s1100-c50.jpg');
+section-with-bg {
+      background-image: url('Kafka2.jpg');
       background-size: cover;
       background-position: center;
-      height: 100vh; /* Adjust height as needed */
+      min-height: 200vh; /* Adjust height as needed */
       color: white; /* Set text color to contrast with background */
-      background-color": #333;
-    }
-</style>
+      background-color: #333;
+    	display: flex;
+    	justify-content: center; /* Centers content horizontally */
+    	align-items: center;     /* Centers content vertically */
+    	text-align: center;      /* Centers text within the container */
+}
 
-</head>
+    /* CSS for the section without background image */
+    .section-no-bg {
+      height: 100vh; /* Adjust height as needed */
+      background-color: #333; /* Set background color to whatever you want */
+    }
+
+a{color: #b8860b; text-decoration:none;}
+a.current{color: #52739e;}
+a.current:hover{color: #8B8000 ;}
+a:hover{color: #8B8000 ;}
+a:active{color: #8B8000 ;}
+
+h2,h3{clear:left; color: #8B8000 ; margin:1.5em 0em 1em 0em;}
+h1{font-size:2.67em;}
+h2{font-size:2.00em;}
+h3{font-size:1.67em;}
+h4{font-size:1.33em;}
+p{list-style:none; margin:24px auto 24px auto; padding:0px; width:900px; text-align:left;}
+
+i,em{font-style:italic;}
+b,strong{font-weight:bold;}
+sup{
+    vertical-align: super;
+    font-size: 0.8em;
+    line-height: 0;
+}
+sub{
+    vertical-align: sub;
+    font-size: 0.8em;
+    line-height: 0;
+}
+table{
+    width: 1000px;
+    margin: 12px auto 24px auto;
+    float: center;
+    /* UNCOMMENT THIS FOR DEBUGGING THE ALIGNMENT */
+    /*border: 1px solid black;*/
+}
+th,td{
+    text-align: left;
+    /* UNCOMMENT THIS FOR DEBUGGING THE ALIGNMENT */
+    /*border: 1px solid black;*/
+}
+
+h2.h2-session-info{ text-align: center;
+    color: white;
+
+}
+
+/* The Table on the Program Page */
+td.room{padding: 4px 12px 4px 4px; width: 90%; vertical-align:bottom; font-size:1.67em; color: #52739e; height:32px;}
+td.date{white-space:nowrap; width:130px; text-align:right; vertical-align:top; padding:4px 16px 0px 0px;}
+td.title{padding: 4px 12px 4px 4px; width: 90%; vertical-align:top; font-size:1.5em; color: white; height:32px; text-align: center;}
+td.title-special{padding: 4px 12px 4px 4px; width: 90%; vertical-align:top; font-size:1.67em; color: #52739e; height:32px; }
+td.speaker{padding: 4px 12px 4px 4px; font-style: italic; font-size:1em; max-height:999999px; text-align: center;}
+td.abstract{padding: 4px 12px 12px 4px; font-size:1em; max-height:999999px; text-align: center;}
+td.abstract img{display: block; margin: 4px auto 8px auto}
+
+
+/* My hacky way of making the site mobile-friendly */
+@media only screen and (max-width: 1100px) {
+    h2{font-size:3.00em;}
+    p{font-size:1.5em; line-height:1.5em;}
+    th,td,tr{font-size:1.5em; line-height:1.5em;}
+    td.date{font-size:1em; padding-top:0.5em;}
+    td.navigation{font-size:1.5em; padding:0px 20px 0px 20px;}
+    table.footer{font-size:0.33em;}
+}
+ h1.h1-centre{
+    align: center;
+ }
+
+ .navbar {
+  background-color: #333;
+  position: relative;
+  z-index: 999;
+  text-align: center;
+  vh:100px;
+ }
+
+ ul.special-items li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background: #333;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+.center-a{
+    text-align: center;
+    font-size: 20px;
+}
+
+.h2-sect-bg-about{
+  font-size: 32px;
+  color: rgb( 247, 181, 0);
+  display: block;
+  text-align: center;}
+
+    </style>
+  </head>
+
+
+
+  <nav class="navbar">
+  <ul>
+    <li><a href="https://kafka-2024.github.io/Conference/">Home</a></li>
+    <li><a href="https://kafka-2024.github.io/Conference/About">About</a></li>
+      <li>  
+            <li><a href="https://kafka-2024.github.io/Conference/Abstracts">Abstracts</a>
+              <ul>
+                  <li><a href="https://kafka-2024.github.io/Conference/Abstracts#Rebecca-Bamford">Rebecca Bamford</a></li>
+		  <li><a href="https://kafka-2024.github.io/Conference/Abstracts#Bradley-Speaker">Matthew Bradley</a></li>
+                  <li><a href="https://kafka-2024.github.io/Conference/Abstracts#Annaliso-Caputo">Annaliso Caputo</a></li>
+		  <li><a href="https://kafka-2024.github.io/Conference/Abstracts#Bruno-Cassara">Bruno Cassara</a></li>
+                  <li><a href="https://kafka-2024.github.io/Conference/Abstracts#Sandro-Gorgone">Sandro Gorgone</a></li>
+		  <li><a href="https://kafka-2024.github.io/Conference/Abstracts#Gregorio-abstract">Giuliana Gregorio</a></li> 
+		  <li><a href="https://kafka-2024.github.io/Conference/Abstracts#Dominic-Harkin">Dominic Harkin</a></li>
+                  <li><a href="https://kafka-2024.github.io/Conference/Abstracts#Caterina-Marino">Caterina Marino</a></li>
+                  <li><a href="https://kafka-2024.github.io/Conference/Abstracts#Natascia-Mattucci">Natascia Mattucci</a></li>
+                  <li><a href="https://kafka-2024.github.io/Conference/Abstracts#Aisling-Reid">Aisling Reid</a></li>
+                  <li><a href="https://kafka-2024.github.io/Conference/Abstracts#Caterina-Resta">Caterina Resta</a></li>
+		  <li><a href="https://kafka-2024.github.io/Conference/Abstracts#Giusy-Abstract">Giusy Strummiello</a></li>
+                  <li><a href="https://kafka-2024.github.io/Conference/Abstracts#Valentina-Surace">Valentina Surace</a></li>
+                  <li><a href="https://kafka-2024.github.io/Conference/Abstracts#Craig-Wallace">Craig Wallace</a></li>
+		  <li><a href="https://kafka-2024.github.io/Conference/Abstracts#Ucciardello-Speaker">Giuseppe Ucciardello</a></li>
+              </ul>
+            </li>
+            <li>  
+              <li><a href="https://kafka-2024.github.io/Conference/Speakers">Speakers</a>
+                <ul>
+                    <li><a href="https://kafka-2024.github.io/Conference/Speakers#Rebecca-Bamford">Rebecca Bramford</a></li>
+		    <li><a href="https://kafka-2024.github.io/Conference/Speakers#Bradley-Speaker">Matthew Bradley</a></li>
+                    <li><a href="https://kafka-2024.github.io/Conference/Speakers#Annaliso-Caputo">Annaliso Caputo</a></li>
+		    <li><a href="https://kafka-2024.github.io/Conference/Speakers#Bruno-Cassara">Bruno Cassara</a></li>
+                    <li><a href="https://kafka-2024.github.io/Conference/Speakers#Gorgone-Speaker">Sandro Gorgone</a></li>
+		    <li><a href="https://kafka-2024.github.io/Conference/Speakers#Giuliana-Gregorio">Sandro Gorgone</a></li>
+		    <li><a href="https://kafka-2024.github.io/Conference/Speakers#Harkin-Speaker">Dominic Harkin</a></li>
+                    <li><a href="https://kafka-2024.github.io/Conference/Speakers#Marino-Speaker">Caterina Marino</a></li>
+                    <li><a href="https://kafka-2024.github.io/Conference/Speakers#Mattucci-Speaker">Natascia Mattucci</a></li>
+                    <li><a href="https://kafka-2024.github.io/Conference/Speakers#Aisling-Speaker">Aisling Reid</a></li>
+                    <li><a href="https://kafka-2024.github.io/Conference/Speakers#Caterina-Resta-Speaker">Caterina Resta</a></li>
+		    <li><a href="https://kafka-2024.github.io/Conference/Speakers#Giusy-Speaker">Giusy Strummiello</a></li>
+                    <li><a href="https://kafka-2024.github.io/Conference/Speakers#Valentina-Speaker">Valentina Surace</a></li>
+                    <li><a href="https://kafka-2024.github.io/Conference/Speakers#Craig-Speaker">Craig Wallace</a></li>
+		    <li><a href="https://kafka-2024.github.io/Conference/Speakers#Ucciardello-Speaker">Giuseppe Ucciardello</a></li>
+                </ul>
+              </li>
+      <li><a href="https://kafka-2024.github.io/Conference/Conference_Prog">Conference Programme</a>
+	      
+        <ul>
+          <li><a href="https://kafka-2024.github.io/Conference/Conference_Prog#Morning-Session">Morning Session</a></li>
+          <li><a href="https://kafka-2024.github.io/Conference/Conference_Prog#Afternoon-Session">Afternoon Session</a></li>
+          <li><a href="Final_Program.pdf" download>Download Programme</a></li>
+     <li><a href="Final_Poster.pdf" download>Download Poster</a></li>
+        </ul>      
+    </li>
+    <li><a href="https://kafka-2024.github.io/Conference/Register">Register</a></li>
+    <li><a href="https://kafka-2024.github.io/Conference/Zoom_Link">Zoom Link</a></li>
+  </ul>
+</nav>
+
 
 <body>
-
-  <nav>
-    <div class="logo">Mind the Gap 2024</div>
-    <div class="nav-items">
-        <a href="https://mindthegap2024.github.io/Mind_The_Gap_2024/">Home</a>
-        <a href="https://mindthegap2024.github.io/Mind_The_Gap_2024/About.html">About</a>
-        <a href="https://mindthegap2024.github.io/Mind_The_Gap_2024/Abstracts.html">Abstracts</a>
-        <a href="https://mindthegap2024.github.io/Mind_The_Gap_2024/Conference_Prog.html">Conference Programme</a>
-        <a href="https://mindthegap2024.github.io/Mind_The_Gap_2024/Register.html">Register</a>
-        <a href="https://mindthegap2024.github.io/Mind_The_Gap_2024/Zoom_Link.html">Zoom Link</a>
-    </div>
-  </nav>
-
-
 <section class="section-with-bg">
 	<h1>Mind the Gap 2024</h1>
     <form id="myForm">
