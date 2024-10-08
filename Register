@@ -208,10 +208,9 @@ td.abstract img{display: block; margin: 4px auto 8px auto}
   </ul>
 </nav>
 
-
 <body>
 <section class="section-with-bg">
-	<h1>Mind the Gap 2024</h1>
+	<h1>Kafka 2024 Register</h1>
     <form id="myForm">
         <label for="fname">First Name:</label>
         <input type="text" id="fname" name="fname">
@@ -224,6 +223,7 @@ td.abstract img{display: block; margin: 4px auto 8px auto}
         <br>
         <input type="submit" id="submit" name="submit">
     </form>
+
     <button onclick="runPythonScript()">Run Python Script</button>
 
     <script>
@@ -252,7 +252,6 @@ td.abstract img{display: block; margin: 4px auto 8px auto}
 </section>
     <footer id="footer">
 
-        
         <div class="copyright">
             <p></p>
  
@@ -261,7 +260,6 @@ td.abstract img{display: block; margin: 4px auto 8px auto}
 			<a href="https://www.qub.ac.uk">
                     		<img src="https://www.wemakescholars.com/admin/uploads/providers/cbeVGa9KVNyYBS8_OXTXqYl5C73MTuNZ.webp" height="100" width="100">
 			</a>
-
                 </li>
  
                 <li>
