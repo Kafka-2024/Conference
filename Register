@@ -1,0 +1,162 @@
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,
+	initial-scale=1.0">
+	<title>Kafka 2024 Register</title>
+	<link rel="stylesheet" href="styles.css">
+	  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column; /* Set the main axis as vertical */
+      min-height: 100vh;
+    }
+
+    nav {
+      height: 70px; /* Adjust the height of the top frame as needed */
+      background-color: #333; /* Background color of the top frame */
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 20px; /* Add horizontal padding */
+    }
+
+    .logo {
+      font-size: 1.5em;
+      color: white;
+    }
+
+    .nav-items {
+      display: flex;
+      align-items: center;
+    }
+
+    .nav-items a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px; /* Adjust the margin as needed */
+    }
+
+    .hero {
+      flex: 1;
+      background-image: url('');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      color: white; /* Text color on top of the image */
+      padding: 20px; /* Add padding to the content area */
+      display: flex;
+      align-items: left;
+      justify-content: left;
+      text-align: left;
+    }
+
+    .hero h1 {
+      font-size: 3em;
+      font-weight: bold;
+      margin: 0;
+      padding: 0;
+    }
+
+.section-with-bg {
+      background-image: url('https://media.npr.org/assets/img/2011/12/22/MindtheGap-0b02f70c129aa7f0fd0a090c9ee90a8aca1f0b16-s1100-c50.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 100vh; /* Adjust height as needed */
+      color: white; /* Set text color to contrast with background */
+      background-color": #333;
+    }
+</style>
+
+</head>
+
+<body>
+
+  <nav>
+    <div class="logo">Mind the Gap 2024</div>
+    <div class="nav-items">
+        <a href="https://mindthegap2024.github.io/Mind_The_Gap_2024/">Home</a>
+        <a href="https://mindthegap2024.github.io/Mind_The_Gap_2024/About.html">About</a>
+        <a href="https://mindthegap2024.github.io/Mind_The_Gap_2024/Abstracts.html">Abstracts</a>
+        <a href="https://mindthegap2024.github.io/Mind_The_Gap_2024/Conference_Prog.html">Conference Programme</a>
+        <a href="https://mindthegap2024.github.io/Mind_The_Gap_2024/Register.html">Register</a>
+        <a href="https://mindthegap2024.github.io/Mind_The_Gap_2024/Zoom_Link.html">Zoom Link</a>
+    </div>
+  </nav>
+
+
+<section class="section-with-bg">
+	<h1>Mind the Gap 2024</h1>
+    <form id="myForm">
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname" name="fname">
+        <br>
+        <label for="surname">Surname:</label>
+        <input type="text" id="sname" name="sname">
+        <br>
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email">
+        <br>
+        <input type="submit" id="submit" name="submit">
+    </form>
+    <button onclick="runPythonScript()">Run Python Script</button>
+
+    <script>
+        function runPythonScript() {
+            // Prevent form submission
+            event.preventDefault();
+
+            // Get form data
+            var formData = new FormData(document.getElementById("myForm"));
+
+            // Send form data to Python script
+            fetch("/Users/andrewgardener/Desktop/Aisling_Website/request.py", {
+                method: "POST",
+                body: formData
+            })
+            .then(response => response.text())
+            .then(data => {
+                // Handle response from Python script
+                console.log(data);
+            })
+            .catch(error => {
+                console.error("Error:", error);
+            });
+        }
+    </script>
+</section>
+    <footer id="footer">
+
+        
+        <div class="copyright">
+            <p></p>
+ 
+            <ul class="contact">
+                <li>
+			<a href="https://www.qub.ac.uk">
+                    		<img src="https://www.wemakescholars.com/admin/uploads/providers/cbeVGa9KVNyYBS8_OXTXqYl5C73MTuNZ.webp" height="100" width="100">
+			</a>
+
+                </li>
+ 
+                <li>
+		  <a href="https://international.unime.it">
+                    <img src="https://github.com/MindTheGap2024/Conference2024/blob/main/Messina_uni_icon.png?raw=true" height="100" width="100">
+                </li>
+ 
+                <li>
+		  <a href="https://archivio.unime.it/it/centri/cesmis">
+                    <img src="https://github.com/MindTheGap2024/Conference2024/blob/main/Simbola.png?raw=true" height="100" width="100">
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+
+
+</body>
+
+</html>
