@@ -74,14 +74,35 @@
   display: flex;
 }
 
-.image {
-  flex: 1;
-}
+  /* Set a common size for all images */
+  img {
+    width: 300px; /* Set the desired width */
+    height: 200px; /* Set the desired height */
+    object-fit: cover; /* Ensures images fill the box without stretching */
+  }
 
-.image img {
-  width: 100%;
-  height: auto;
-}
+  .img-container-index {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1em 0;
+  }
+
+  .image-left, .image-right {
+    width: 300px; /* Ensure the width matches the image size */
+    height: 200px; /* Ensure the height matches the image size */
+    margin-right: 20px; /* Space between images and text */
+  }
+
+  /* Ensure the image aligns with the text container */
+  .text-container-index {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 400px;
+    margin-left: 20px;
+  }
+
 
 .organizing-committee {
   flex: 1;
@@ -147,7 +168,6 @@
             <li><a href="https://kafka-2024.github.io/Conference/Abstracts">Abstracts</a>
               <ul>
                   <li><a href="https://kafka-2024.github.io/Conference/Abstracts#Rebecca-Bamford">Rebecca Bamford</a></li>
-		  <li><a href="https://kafka-2024.github.io/Conference/Abstracts#Bradley-Speaker">Matthew Bradley</a></li>
                   <li><a href="https://kafka-2024.github.io/Conference/Abstracts#Annaliso-Caputo">Annaliso Caputo</a></li>
 		  <li><a href="https://kafka-2024.github.io/Conference/Abstracts#Cassara-Abstract">Bruno Cassara</a></li>
                   <li><a href="https://kafka-2024.github.io/Conference/Abstracts#Sandro-Gorgone">Sandro Gorgone</a></li>
@@ -167,7 +187,6 @@
               <li><a href="https://kafka-2024.github.io/Conference/Speakers">Speakers</a>
                 <ul>
                     <li><a href="https://kafka-2024.github.io/Conference/Speakers#Rebecca-Bamford">Rebecca Bramford</a></li>
-		    <li><a href="https://kafka-2024.github.io/Conference/Speakers#Bradley-Speaker">Matthew Bradley</a></li>
                     <li><a href="https://kafka-2024.github.io/Conference/Speakers#Annaliso-Caputo">Annaliso Caputo</a></li>
 		    <li><a href="https://kafka-2024.github.io/Conference/Speakers#Bruno-Cassara">Bruno Cassara</a></li>
                     <li><a href="https://kafka-2024.github.io/Conference/Speakers#Gorgone-Speaker">Sandro Gorgone</a></li>
