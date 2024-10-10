@@ -10,6 +10,10 @@ body {
     flex-direction: column; /* Set the main axis as vertical */
 }
 
+h1, h2, h3, h4, h5, h6 {
+  color: white;
+}
+
 .logo {
   font-size: 1.5em;
   font-weight: bold;
@@ -60,7 +64,7 @@ body {
 			margin-right: 2em;
 			display: block;
 			right: 0;
-      color: rgb( 247, 181, 0)
+      color: white
 		}	
 
   
@@ -70,7 +74,7 @@ body {
         margin-right: 2em;
         display: block;
         right: 0;
-        color: rgb( 247, 181, 0)
+        color: white
       }	
 
 
@@ -90,7 +94,7 @@ body {
 			margin-bottom: 1em;
 			margin-left: 1em;
 			display: block;
-      color: rgb( 247, 181, 0)
+      color: white
 		}	
 
 	p.p-img-right{font-size: 20px;
@@ -469,13 +473,13 @@ line-height: 1.5;
 {
     letter-spacing: 0.8px;
     font-size: 0.50em;
-    color: rgba(255, 255, 255, 0.6);
+    color: white;
 }
      
 .copyright a
 {
     text-decoration: none;
-    color: rgba(255, 255, 255, 0.8);
+    color: white;
 }
 
 /* Styling Social Icons */
@@ -528,14 +532,14 @@ ul.contact li a{
 {
     letter-spacing: 0.8px;
     font-size: 0.5em;
-    color: rgba(255, 255, 255, 0.6);
+    color: white;
     text-align: center;
 }
      
 .copyright a
 {
     text-decoration: none;
-    color: rgba(255, 255, 255, 0.8);
+    color: white;
 }
  
 /* Styling Social Icons */
@@ -544,3 +548,11 @@ ul.contact li a{
   display: flex;
   justify-content: space-around;
 }
+
+
+
+
+
+
+
+
