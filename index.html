@@ -91,6 +91,97 @@
     padding: 10px; /* Adjust padding as needed */
 }
 
+
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  margin: 2em 0;
+}
+
+
+/* General styles for full-width background images */
+.fullwidth-background-image {
+  position: relative;
+  width: 100%;
+  height: 400px; /* Adjust height as needed */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: 20px; /* Adds space between sections */
+}
+
+/* Set background images for each section */
+#conference-programme {
+  background-image: url('Kafka1.jpg'); /* Replace with the actual image URL */
+}
+
+#abstracts {
+  background-image: url('Kafka-2.jpg'); /* Replace with the actual image URL */
+}
+
+#speakers {
+  background-image: url('Kafka-3.jpg'); /* Replace with the actual image URL */
+}
+
+#poster {
+  background-image: url('https://miro.medium.com/v2/resize:fit:1100/1*E3aOnbVbUuYEFnW2NkIJIw.jpeg'); /* Replace with the actual image URL */
+}
+
+/* Overlay content styling */
+.overlay-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+.overlay-content h2 {
+  font-size: 2.5em; /* Adjust font size */
+  margin-bottom: 10px;
+}
+
+.overlay-content p {
+  font-size: 1.2em; /* Adjust font size */
+  margin-bottom: 15px;
+}
+
+.btn {
+  background-color: #333;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.btn:hover {
+  background-color: #555;
+}
+
+/* Responsive adjustments for mobile */
+@media (max-width: 768px) {
+  .overlay-content h2 {
+    font-size: 1.8em;
+  }
+
+  .overlay-content p {
+    font-size: 1em;
+  }
+
+  .btn {
+    padding: 10px 20px;
+    font-size: 0.9em;
+  }
+
+  .fullwidth-background-image {
+    height: 300px; /* Reduce height for smaller screens */
+  }
+}
+
+
 .container {
   display: flex;
   flex-wrap: wrap; /* Ensures the items wrap on smaller screens */
@@ -109,12 +200,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 45%; /* Adjust width as needed */
+  width: 200%; /* Adjust width as needed */
 }
 
  
 .image-left, .image-right {
-  max-width: 100%;
+  max-width: 200%;
   height: auto;
   object-fit: cover;
 }
@@ -136,7 +227,7 @@
   }
 
   .img-container-index, .text-container-index {
-    width: 100%; /* Full width for mobile */
+    width: 200%; /* Full width for mobile */
     margin-bottom: 1em; /* Add spacing between elements */
   }
 
@@ -270,96 +361,48 @@
 
 <br>
 
+
 <section class="section-abstract">
-
-  <div class="container">
-    <div class="img-container-index">
-      <div class="image-left">
-
-        <img src="Kafka1.jpg" alt="Border Crossing EU" class="img-left">
-        </div>
-      </div>
-      <div class="text-container-index">
-
+  <!-- First section with full-width background image -->
+  <div class="fullwidth-background-image" id="conference-programme">
+    <div class="overlay-content">
       <h2 class="h2-img-left">Conference Programme</h2>
-		  <p class="p-img-left">One Hundred Years of Kafka Conference Brochure</p>
-		  <br>
-			<button class="btn" onclick="window.location.href ='https://kafka-2024.github.io/Conference/Conference_Prog'">Conference Programme</button>
-      <a href="https://mindthegap2024.github.io/MindTheGap2024/Conference_Prog"></a>
+      <p class="p-img-left">One Hundred Years of Kafka Conference Brochure</p>
+      <button class="btn" onclick="window.location.href='https://kafka-2024.github.io/Conference/Conference_Prog'">Conference Programme</button>
+    </div>
+  </div>
 
-      </div>
-      </div>
-</section>
-
-<section class="section-abstract">
-
-  <div class="container">
-    <div class="text-container-index">
+  <!-- Second section with full-width background image -->
+  <div class="fullwidth-background-image" id="abstracts">
+    <div class="overlay-content">
       <h2 class="h2-img-left">Abstracts</h2>
       <p class="p-img-left">Click here for Abstracts</p>
-        <button class="btn" onclick="window.location.href ='https://kafka-2024.github.io/Conference/Abstracts'">Abstracts</button>
-        <a href="https://kafka-2024.github.io/Conference/Abstracts"></a>
-       
+      <button class="btn" onclick="window.location.href='https://kafka-2024.github.io/Conference/Abstracts'">Abstracts</button>
     </div>
-    <div class="img-container-index">
-      <div class="image-right">
-    <img src="Kafka-2.jpg" alt="The Trial" class="image-right" >
-    </div>
-    </div>
-    </div>
-  </section>
-
-
-<section class="section-abstract">
-
-  <div class="container">
-    <div class="img-container-index">
-
-      <div class="image-left">
-       <img src="Kafka-3.jpg" alt="Amerika" class="img-right">
-      </div>
-    </div>
-    <div class="text-container-index">
-      <h2 class="h2-img-left">Speakers</h2>
-      <p class="p-img-right">Click here for Speaker informtation </p>
-
-      <button class="btn" onclick="window.location.href ='https://kafka-2024.github.io/Conference/Speakers'">Speakers</button>
-      <a href="https://kafka-2024.github.io/Conference/Speakers"></a>
-    </div>
-
   </div>
-	
 </section>
 
 <section class="section-abstract">
-
-  <div class="container">
-    <div class="text-container-index">
-      <h2 class="h2-img-right">Organising Committee</h2>
-      <table id="organising-committee">
-        <tr>
-             <td><p class="p-img-cent">Aisling Reid (Queen's University Belfast)</p></td>
-        </tr>
-        <tr>
-
-          <td><p class="p-img-cent">Valentine Surace(Universita degli Studi Messina)</p></td>
-
-        </tr>
-
-  </table>
-
-       
-  
+  <!-- Third section with full-width background image -->
+  <div class="fullwidth-background-image" id="speakers">
+    <div class="overlay-content">
+      <h2 class="h2-img-left"> Speakers</h2>
+      <p class="p-img-left">One Hundred Years of Kafka Speakers</p>
+      <button class="btn" onclick="window.location.href='https://kafka-2024.github.io/Conference/Speakers'">Speakers</button>
     </div>
-    <div class="img-container-index">
-      <div class="image-right">
-    <img src="Kakfa-3.jpg" alt="" class="image-right">
-    </div>
-    </div>
-    </div>
-  </section>
+  </div>
 
-</div>
+  <!-- Forth section with full-width background image -->
+  <div class="fullwidth-background-image" id="poster">
+    <div class="overlay-content">
+      <h2 class="h2-img-left">Poster</h2>
+      <p class="p-img-left">Click here for Poster</p>
+      <button class="btn" onclick="window.location.href='https://kafka-2024.github.io/Conference/Abstracts'">Poster</button>
+    </div>
+  </div>
+</section>
+
+
 <div>
 
   <footer id="footer">
