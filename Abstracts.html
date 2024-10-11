@@ -23,6 +23,36 @@
       height: 100vh; /* Adjust height as needed */
       background-color: #333; /* Set background color to whatever you want */
     }
+#footer {
+  background-color: black; /* Change as needed */
+  padding: 20px;
+  text-align: center;
+}
+
+.contact {
+  display: flex;
+  justify-content: space-around; /* Distributes space evenly */
+  flex-wrap: wrap; /* Allows items to wrap if necessary */
+}
+
+.contact-item {
+  display: flex;
+  flex-direction: column; /* Aligns image and label vertically */
+  align-items: center; /* Centers items horizontally */
+  margin: 10px; /* Adds spacing between items */
+}
+
+.contact-item img {
+  height: 90px; /* Adjust height as needed */
+  width: 90px; /* Adjust width as needed */
+  margin-bottom: 5px; /* Adds space between the image and label */
+}
+
+.contact-item span {
+  text-align: center; /* Centers the label text */
+  font-size: 14px; /* Adjust font size if needed */
+  line-height: 1.2; /* Adjust line height for better spacing */
+}
 
 
 a{color: #b8860b; text-decoration:none;}
@@ -463,38 +493,33 @@ The attentiveness to creatures. Walter Benjamin interpreter of Kafka		</td>
 
 	<div>
 
-		<footer id="footer">
-		  <div class="copyright">
-			<!-- First row for icons -->
-			<ul class="contact">
-			  <li>
-				<a href="https://www.qub.ac.uk">
-				  <img src="https://www.wemakescholars.com/admin/uploads/providers/cbeVGa9KVNyYBS8_OXTXqYl5C73MTuNZ.webp" height="100" width="100" alt="QUB Icon">
-				</a>
-			  </li>
-		
-			  <li>
-				<a href="https://international.unime.it">
-				  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBlBt2j2OwlmmkVUqFX5jeXbVPx0S1u80kX-lncOtz1A&s" height="100" width="100" alt="Messina Icon">
-				</a>
-			  </li>
-		
-			  <li>
-				<a href="https://archivio.unime.it/it/centri/cesmis">
-				  <img src="https://github.com/MindTheGap2024/Conference2024/blob/main/Simbola.png?raw=true" height="100" width="100" alt="Simbola icon">
-				</a>
-			  </li>
-			</ul>
-		  </div>
-		
-			<!-- Second row for labels -->
-			<ul class="label-row">
-			  <li>Queen's University Belfast</li>
-			  <li>Università degli Studi di Messina Dipartimento di Civilità Antiche e Moderne</li>
-			  <li>Centro Europeo di Studi su Mito e Simbolo</li>
-			</ul>
-		  </div>
-		</footer>
+<footer id="footer">
+  <div class="copyright">
+    <!-- First row for icons -->
+    <div class="contact">
+      <div class="contact-item">
+        <a href="https://www.qub.ac.uk">
+          <img src="https://www.wemakescholars.com/admin/uploads/providers/cbeVGa9KVNyYBS8_OXTXqYl5C73MTuNZ.webp" alt="QUB Icon">
+        </a>
+        <span>Faculty Research Initiatives Fund (QUB)</span>
+      </div>
+  
+      <div class="contact-item">
+        <a href="https://international.unime.it">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBlBt2j2OwlmmkVUqFX5jeXbVPx0S1u80kX-lncOtz1A&s" alt="Messina Icon">
+        </a>
+        <span>Università degli Studi di Messina Dipartimento di Civilità Antiche e Moderne</span>
+      </div>
+  
+      <div class="contact-item">
+        <a href="https://archivio.unime.it/it/centri/cesmis">
+          <img src="https://github.com/MindTheGap2024/Conference2024/blob/main/Simbola.png?raw=true" alt="Simbola icon">
+        </a>
+        <span>Centro Europeo di Studi su Mito e Simbolo</span>
+      </div>
+    </div>
+  </div>
+</footer>
 		
 	  </div>
 </body>
