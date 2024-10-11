@@ -268,7 +268,7 @@ max-height: 100%; /* set the desired height */
 flex-grow: 1;
 flex-shrink: 1;
 flex-basis: auto;
-background-image: url("https://miro.medium.com/v2/resize:fit:1100/1*E3aOnbVbUuYEFnW2NkIJIw.jpeg");
+background-image: url("");
 background-size: contain;
 background-repeat: no-repeat;
 background-position: center;
@@ -297,7 +297,7 @@ height: 100vh; /* Set the height of the parent container to 100% of the viewport
 
 
 .section-with-bg {
-  background-image: url("/Users/andrewgardener/Desktop/Aisling_Website/MindtheGap.jpg");
+  background-image: url("https://miro.medium.com/v2/resize:fit:1100/1*E3aOnbVbUuYEFnW2NkIJIw.jpeg");
   background-size: cover;
   background-position: center;
   height: 100vh; /* Adjust height as needed */
@@ -446,21 +446,6 @@ line-height: 1.5;
   background-color: #555;
 }
 
-/* Footer Bar  Section */
-
-.label-row {
-
-  list-style: none;
-  display: flex;
-  justify-content: space-around;
-}
-
-/* Additional styling for the labels */
-.label-row li {
-  text-align: center;
-  width: 120px;
-}
-
 .copyright
 {
     overflow: hidden;
@@ -518,29 +503,7 @@ ul.contact li a{
 }
 
  
-/*** Adding Styles to Copyright Div ***/
-.copyright
-{
-    overflow: hidden;
-    padding: 4em;
-    border-top: 10px solid rgba(255, 255, 255, 0.08);
-    border-bottom: 20px;
-    text-align: center;
-}
-     
-.copyright p
-{
-    letter-spacing: 0.8px;
-    font-size: 0.5em;
-    color: white;
-    text-align: center;
-}
-     
-.copyright a
-{
-    text-decoration: none;
-    color: white;
-}
+
  
 /* Styling Social Icons */
 .contact {
@@ -548,6 +511,9 @@ ul.contact li a{
   display: flex;
   justify-content: space-around;
 }
+
+
+
 
 
 
