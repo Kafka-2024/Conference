@@ -13,6 +13,85 @@
       color: white;
     }
 
+/* Main container */
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Layout for each row (image and text side by side) */
+.content-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px; /* Space between the image and text */
+}
+
+/* Reverse layout to alternate (text on left, image on right) */
+.content-row.reverse {
+  flex-direction: row-reverse;
+}
+
+/* Text content */
+.text-content {
+  flex: 1;
+  padding: 20px;
+  text-align: center;
+}
+
+.text-content h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.text-content p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.btn {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+/* Image content */
+.image-content {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-content img {
+  max-width: 100%; /* Make sure image doesn't exceed its container */
+  height: auto; /* Keep the image's aspect ratio */
+  object-fit: cover; /* Optional: ensure image covers its container */
+}
+
+/* Responsiveness for smaller screens */
+@media (max-width: 768px) {
+  .content-row {
+    flex-direction: column;
+  }
+
+  .content-row.reverse {
+    flex-direction: column;
+  }
+}
+
 .image-container {
   display: flex;
   justify-content: center;
@@ -367,46 +446,57 @@
 
 <br>
 
-
-<section class="section-abstract">
-  <!-- First section with full-width background image -->
-  <div class="fullwidth-background-image" id="conference-programme">
-    <div class="overlay-content">
-      <h2 class="h2-img-left">Conference Programme</h2>
-      <p class="p-img-left">One Hundred Years of Kafka Conference Brochure</p>
-      <button class="btn" onclick="window.location.href='https://kafka-2024.github.io/Conference/Conference_Prog'">Conference Programme</button>
+<section class="container">
+  <!-- First row: Image on the left, text on the right -->
+  <div class="content-row">
+    <div class="image-content">
+      <img src="Kafka1.jpg" alt="Image Description">
+    </div>
+    <div class="text-content">
+      <h2>Conference Programme</h2>
+      <button class="btn">Click Me</button>
     </div>
   </div>
 
-  <!-- Second section with full-width background image -->
-  <div class="fullwidth-background-image" id="abstracts">
-    <div class="overlay-content">
-      <h2 class="h2-img-left">Abstracts</h2>
-      <p class="p-img-left">Click here for Abstracts</p>
-      <button class="btn" onclick="window.location.href='https://kafka-2024.github.io/Conference/Abstracts'">Abstracts</button>
+  <!-- Second row: Image on the right, text on the left (reverse layout) -->
+  <div class="content-row">
+    <div class="text-content">
+      <h2>Speakers</h2>
+      <button class="btn">Speaker Bios</button>
+    </div>
+    <div class="image-content">
+      <img src="Kafka-2.jpg" alt="Image Description">
+    </div>
+  </div>
+</section>
+
+
+<section class="container">
+  <!-- First row: Image on the left, text on the right -->
+  <div class="content-row">
+    <div class="image-content">
+      <img src="Kafka-3.jpg" alt="Image Description">
+    </div>
+    <div class="text-content">
+      <h2>Abstracts</h2>
+      <button class="btn">Abstracts</button>
+    </div>
+  </div>
+
+  <!-- Second row: Image on the right, text on the left (reverse layout) -->
+  <div class="content-row">
+    <div class="text-content">
+      <h2>Zoom Link</h2>
+      <button class="btn">Zoom</button>
+    </div>
+    <div class="image-content">
+      <img src="Kafka1.jpg" alt="Image Description">
     </div>
   </div>
 </section>
 
-<section class="section-abstract">
-  <!-- Third section with full-width background image -->
-  <div class="fullwidth-background-image" id="speakers">
-    <div class="overlay-content">
-      <h2 class="h2-img-left"> Speakers</h2>
-      <p class="p-img-left">One Hundred Years of Kafka Speakers</p>
-      <button class="btn" onclick="window.location.href='https://kafka-2024.github.io/Conference/Speakers'">Speakers</button>
-    </div>
-  </div>
 
-  <!-- Forth section with full-width background image -->
-  <div class="fullwidth-background-image" id="poster">
-    <div class="overlay-content">
-      <h2 class="h2-img-left">Poster</h2>
-      <p class="p-img-left">Click here for Poster</p>
-      <button class="btn" onclick="window.location.href='https://kafka-2024.github.io/Conference/Abstracts'">Poster</button>
-    </div>
-  </div>
-</section>
+
 
 
 <div>
