@@ -18,7 +18,7 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
   padding: 20px;
 }
@@ -52,13 +52,13 @@
 .text-content p {
   font-size: 1.2em;
   margin-bottom: 20px;
+  text-align: right !important;
 }
 
 .btn {
+   background-color: red !important;
+   color: white !important;
   padding: 10px 20px;
-  background-color: #007bff;
-  color: white;
-  border: none;
   cursor: pointer;
 }
 
@@ -69,17 +69,19 @@
 /* Image content */
 .image-content {
   flex: 1;
-  padding: 20px;
+  padding: 0; /* Remove padding around the image */
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .image-content img {
-  max-width: 100%; /* Make sure image doesn't exceed its container */
-  height: auto; /* Keep the image's aspect ratio */
-  object-fit: cover; /* Optional: ensure image covers its container */
+  width: 100%;  /* Ensure the image still fills the width */
+  height: auto; /* Automatically scale the height based on aspect ratio */
+  max-height: 400px; /* Set a maximum height to prevent oversized images */
+  object-fit: contain; /* Still ensure the image covers the area */
 }
+
 
 /* Responsiveness for smaller screens */
 @media (max-width: 768px) {
@@ -123,7 +125,7 @@
       margin: 1em;
     }
 
-.section-with-bg {
+section-with-bg {
   position: relative; /* Ensures the text can be positioned over the background */
   background-image: url("https://miro.medium.com/v2/resize:fit:1100/1*E3aOnbVbUuYEFnW2NkIJIw.jpeg");
   background-size: cover;
@@ -132,6 +134,7 @@
   color: white;
   background-color: #333;
   display: flex;
+  flex-direction: column; /* Arrange the text elements vertically */
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -150,9 +153,36 @@
   z-index: -1; /* Ensures the overlay is behind the text */
 }
 
-/* Styles for the text */
 .h1-sect-bg-1, .h2-sect-bg-1, .p-sect-bg {
   z-index: 2; /* Ensures the text is above the background and overlay */
+  margin: 10px 0; /* Adds space between the elements */
+  text-align: center;
+
+}
+
+.h1-sect-bg-1 {
+  font-size: 3rem; /* Adjust as needed */
+  line-height: 1.2; /* Improves readability */
+  text-align: center;
+
+}
+
+.h2-sect-bg-1 {
+  font-size: 2rem; /* Adjust as needed */
+  margin-top: 10px; /* Adds space between h1 and h2 */
+  text-align: center;
+  color: white;
+}
+
+.p-sect-bg {
+  font-size: 1.2rem; /* Adjust as needed */
+  line-height: 1.5; /* Improves paragraph readability */
+  margin-top: 20px; /* Adds space between the heading and paragraph */
+  max-width: 800px; /* Limits the width of the paragraph for readability */
+  text-align; right;
+  justify-content: right;
+  align-items: right;
+  text-align: right;
 }
 
 	  
@@ -427,8 +457,9 @@
 <body>
 
 <section class="section-with-bg">
-	<h1 class="h1-sect-bg-1">Kafka 2024</h1>
+	<h1 class="h1-sect-bg-1">Kafka 2024<br></h1>
 	<br>
+	<hr>
 	<h2 class="h2-sect-bg-1">One Hundred Years of Kafka</h2>
 	<p class="p-sect-bg">Walter Benjamin argued that to understand Kafka's work,<br>
 	 one must consider Kafka’s sense of failure, evident in his wish to destroy his writings.<br>
@@ -439,10 +470,6 @@
 	—small signs of future transformation amid present chaos—from his unique perspective.<br>	
 	interaction.</p>
 </section>
-
-
-    
-
 
 <br>
 
@@ -494,6 +521,7 @@
     </div>
   </div>
 </section>
+
 
 
 
