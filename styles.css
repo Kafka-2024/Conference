@@ -373,11 +373,12 @@ font-family:"Calibri", sans-serif;
   text-align: left;
 }
 
-.h2-sect-bg-1{text-indent: 20px;
-  font-size: 32px;
-  color: rgb( 247, 181, 0);
-  display: block;
-  text-align: left;}
+.h2-sect-bg-1 {
+  font-size: 2rem; /* Adjust as needed */
+  margin-top: 10px; /* Adds space between h1 and h2 */
+  text-align: center;
+  color: white;
+}
 
 .p-sect-bg{bottom: 0;
 right: 0;
