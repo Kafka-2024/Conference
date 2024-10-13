@@ -303,6 +303,7 @@ height: 100vh; /* Set the height of the parent container to 100% of the viewport
   height: 100vh; /* Adjust height as needed */
   color: white; /* Set text color to contrast with background */
   background-color: #333;
+  text-align; center;
 }
 .back-sect-right{
 position: relative;
