@@ -296,15 +296,6 @@ height: 100vh; /* Set the height of the parent container to 100% of the viewport
 }
 
 
-.section-with-bg {
-  background-image: url("https://miro.medium.com/v2/resize:fit:1100/1*E3aOnbVbUuYEFnW2NkIJIw.jpeg");
-  background-size: cover;
-  background-position: center;
-  height: 100vh; /* Adjust height as needed */
-  color: white; /* Set text color to contrast with background */
-  background-color: #333;
-  text-align; center;
-}
 .back-sect-right{
 position: relative;
 width: 100%; /* Adjust width as needed */
@@ -396,7 +387,7 @@ position: absolute;
 display: block;
 margin-bottom: 1em;
 margin-right: 1em;
-text-align:right;
+text-align:left;
 line-height: 1.5;
 }
 
