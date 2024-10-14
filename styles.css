@@ -10,8 +10,15 @@ body {
     flex-direction: column; /* Set the main axis as vertical */
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h5, h6 {
   color: white;
+}
+
+.h4-sect-session {
+    font-size: 2rem; /* Adjust as needed */
+    margin-top: 10px; /* Adds space */
+    text-align: center;
+    color: red; /* Ensures this h4 is red */
 }
 
 .logo {
