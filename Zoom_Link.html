@@ -44,22 +44,22 @@
 }
 
 .section-with-bg {
-  position: relative; /* Ensures the text can be positioned over the background */
-  background-image: url("Kafka-3.jpg");
-  background-size: cover;
-  background-position: center;
-  height: 100vh; /* Full height of the viewport */
+  position: relative;
+  background-image: url("Kafka4.jpg");
+  background-size: contain; /* Changed from cover to contain */
+  background-repeat: no-repeat; /* Prevents repeating the image */
+  background-position: center; 
+  min-height: 100vh; /* Use min-height instead of height */
   color: white;
   background-color: #333;
   display: flex;
-  flex-direction: column; /* Arrange the text elements vertically */
-  justify-content: left;
-  align-items: left;
+  flex-direction: column;
+  justify-content: flex-start; /* Adjusts to 'flex-start' for better alignment */
+  align-items: flex-start; /* Adjusts to 'flex-start' for better alignment */
   text-align: left;
-  z-index: 1; /* Ensures the background appears behind the content */
+  z-index: 1;
 }
 
-/* Optional: Add a background overlay for better text visibility */
 .section-with-bg::before {
   content: "";
   position: absolute;
@@ -67,9 +67,10 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
-  z-index: -1; /* Ensures the overlay is behind the text */
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1;
 }
+
 	h1{text-indent:20px;
 	   text-size:72px;
 	   }
